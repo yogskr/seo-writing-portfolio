@@ -1,5 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  /* font family */
+  --font-heading: "Patua One", serif;
+  --font-body: "Lexend", sans-serif;
+
+  /* color palettes */
+  /* reference: https://www.nordtheme.com/docs/colors-and-palettes */
+  /* dark colors */
+  --pollar-night-nord0: #2e3440;
+  --pollar-night-nord1: #3b4252;
+  --pollar-night-nord2: #434c5e;
+  --pollar-night-nord3: #4c566a;
+
+  /* light colors */
+  --snow-storm-nord4: #d8dee9;
+  --snow-storm-nord5: #e5e9f0;
+  --snow-storm-nord6: #eceff4;
+
+  /* accent colors */
+  --frost-nord7: #8fbcbb;
+  --frost-nord8: #88c0d0;
+  --frost-nord9: #81a1c1;
+  --frost-nord10: #5e81ac;
+
+  --aurora-nord11: #bf616a;
+  --aurora-nord12: #d08770;
+  --aurora-nord13: #ebcb8b;
+  --aurora-nord14: #a3be8c;
+  --aurora-nord15: #b48ead;
+
+  /* typography */
+  --text-display: clamp(2rem, 5vw, 3.5rem); /* hero title */
+  --text-h1: clamp(1.75rem, 3vw, 2.25rem); /* section headings */
+  --text-h2: clamp(1.5rem, 2.5vw, 1.75rem); /* subsection headings */
+  --text-h3: clamp(1.25rem, 2vw, 1.375rem); /* cards, article titles */
+  --text-body: clamp(1rem, 1.2vw, 1.125rem); /* paragraph text */
+  --text-small: 0.875rem; /* metadata */
+
+  /* spacing */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+  --space-8: 8rem;
+}
+
+/* global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--snow-storm-nord6);
+  color: var(--pollar-night-nord0);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+p,
+li {
+  font-family: var(--font-body);
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
