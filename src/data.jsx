@@ -1,8 +1,8 @@
 // Hero data
 export const heroData = {
-  title: "Hi, I'm Yoga Krisanta",
-  description: "SEO Content Writer | News Writer",
-  picture: "yoga-krisanta.png",
+  title: "Blasius Yoga Puspa Krisanta",
+  description: "I'm ",
+  image: "yoga-krisanta.png",
 };
 
 // Navigation Bar data
