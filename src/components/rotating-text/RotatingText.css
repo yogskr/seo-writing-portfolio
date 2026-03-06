@@ -4,6 +4,10 @@
   animation: blink 0.5s infinite;
 }
 
+.rotating-text {
+  border-bottom: 2px solid var(--pollar-night-nord0);
+}
+
 @keyframes blink {
   0% {
     opacity: 1;
