@@ -1,5 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Hero } from "./components/hero/Hero";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { NavBar } from "./components/navigation/NavBar";
 import "./App.css";
 
@@ -9,23 +13,37 @@ import { Portfolio } from "./pages/portfolio/Portfolio";
 import { Contact } from "./pages/contact/Contact";
 import { Resume } from "./pages/resume/Resume";
 
+function pageDestinations() {
+  return (
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </main>
+  );
+}
+
+function AppContent() {
+  const location = useLocation();
+  const showNavBar = ["/portfolio", "/resume", "/contact"].includes(
+    location.pathname,
+  );
+
+  return (
+    <>
+      {showNavBar && <NavBar showNavBar={showNavBar} />}
+      {pageDestinations()}
+    </>
+  );
+}
+
 export default function App() {
   return (
     <Router>
-      <div className="wrapper">
-        <header>
-          <Hero />
-          <NavBar />
-        </header>
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-      </div>
+      <AppContent />
     </Router>
   );
 }
