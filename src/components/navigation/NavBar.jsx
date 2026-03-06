@@ -1,14 +1,14 @@
 import "./NavBar.css";
 import { navData } from "../../data";
-import { NavLink } from "react-router";
+import { Link } from "react-router-dom";
 
-export function NavBar() {
+export function NavBar({ showNavBar }) {
   return (
-    <nav className="navbar">
-      <ul>
+    <nav className={showNavBar ? "navContainer with-bg" : "navContainer"}>
+      <ul className="navbar">
         {navData.links.map((link) => (
-          <li key={link.name}>
-            <NavLink to={link.url}>{link.name}</NavLink>
+          <li className="navlink" key={link.name}>
+            <Link to={link.url}>{link.name}</Link>
           </li>
         ))}
       </ul>
