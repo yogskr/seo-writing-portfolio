@@ -7,8 +7,11 @@ export function NavBar({ showNavBar }) {
     <nav className={showNavBar ? "navContainer with-bg" : "navContainer"}>
       <ul className="navbar">
         {navData.links.map((link) => (
-          <li className="navlink" key={link.name}>
-            <Link to={link.url}>{link.name}</Link>
+          <li key={link.name}>
+            <Link className="navlink" to={link.url}>
+              <i className={link.icon}></i>
+              {link.name}
+            </Link>
           </li>
         ))}
       </ul>
