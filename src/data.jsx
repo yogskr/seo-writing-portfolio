@@ -8,10 +8,14 @@ export const heroData = {
 // Navigation Bar data
 export const navData = {
   links: [
-    { name: "Home", url: "/" },
-    { name: "Portfolio", url: "/portfolio" },
-    { name: "Resume", url: "/resume" },
-    { name: "Contact", url: "/contact" },
+    { name: "Home", url: "/", icon: "fa-solid fa-house fa-2x" },
+    {
+      name: "Portfolio",
+      url: "/portfolio",
+      icon: "fa-solid fa-briefcase fa-2x",
+    },
+    { name: "Resume", url: "/resume", icon: "fa-solid fa-file-pdf fa-2x" },
+    { name: "Contact", url: "/contact", icon: "fa-solid fa-envelope fa-2x" },
   ],
 };
 
