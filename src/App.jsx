@@ -34,8 +34,8 @@ function AppContent() {
 
   return (
     <>
-      {showNavBar && <NavBar showNavBar={showNavBar} />}
       {pageDestinations()}
+      {showNavBar && <NavBar showNavBar={showNavBar} currentPath={location.pathname} />}
     </>
   );
 }
