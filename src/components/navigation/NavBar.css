@@ -9,10 +9,11 @@ nav {
 }
 
 .navContainer.with-bg {
-  background-color: var(--pollar-night-nord1);
+  background-color: var(--pollar-night-nord0);
   color: var(--snow-storm-nord4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
 }
 
 .navlink {
@@ -20,4 +21,10 @@ nav {
   flex-direction: column;
   align-items: center;
   row-gap: var(--space-1);
+  padding: var(--space-1);
+  width: 5rem;
+}
+
+.navlink.active {
+  border-top: 2px solid var(--snow-storm-nord6);
 }
