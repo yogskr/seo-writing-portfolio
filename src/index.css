@@ -60,7 +60,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--snow-storm-nord4);
+  background-color: var(--snow-storm-nord6);
   color: var(--pollar-night-nord0);
 }
 
@@ -71,6 +71,7 @@ h3 {
 }
 
 p,
+a,
 li {
   font-family: var(--font-body);
   list-style-type: none;
