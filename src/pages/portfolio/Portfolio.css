@@ -1,0 +1,44 @@
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-1);
+  text-align: center;
+}
+
+.portfolio-header h2 {
+  font-size: var(--text-h2);
+}
+
+.portfolio-header p {
+  font-size: var(--text-body);
+}
+
+.description {
+  text-align: center;
+  font-weight: 500;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-content {
+  padding-bottom: 6rem; /* to prevent content from being hidden behind the fixed navbar */
+}
+
+.bitdegree,
+.hostinger,
+.wordpress {
+  margin-bottom: var(--space-4);
+}
+
+.line-break {
+  width: 85%;
+  border: 1px solid var(--pollar-night-nord3);
+  margin: auto;
+  border-radius: 50%;
+}
