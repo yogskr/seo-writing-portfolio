@@ -10,11 +10,11 @@ export const navData = {
   links: [
     { name: "Home", url: "/", icon: "fa-solid fa-house fa-2x" },
     {
-      name: "Works",
+      name: "Portfolio",
       url: "/portfolio",
       icon: "fa-solid fa-briefcase fa-2x",
     },
-    { name: "Resume", url: "/resume", icon: "fa-solid fa-file-pdf fa-2x" },
+    { name: "Resume", url: "/resume", icon: "fa-solid fa-file-lines fa-2x" },
     { name: "Contact", url: "/contact", icon: "fa-solid fa-envelope fa-2x" },
   ],
 };
@@ -32,6 +32,11 @@ export const portfolioData = {
     title: "Portfolio",
   },
   companies: ["BitDegree", "Hostinger", "WordPress"],
+  logos: {
+    bitdegree: "bitdegree.png",
+    hostinger: "hostinger.png",
+    wordpress: "wordpress.png",
+  },
 };
 
 export const bitdegreeArticles = [
@@ -107,3 +112,91 @@ export const wordpressArticles = [
     url: "https://wordpress.org/documentation/article/pocket-casts-embed/",
   },
 ];
+
+// Resume data
+export const resumeData = {
+  header: {
+    title: "Resume",
+  },
+  about: {
+    title: "About Me",
+    description:
+      "SEO content specialist who focuses on creating search-optimized content for global technology companies. Experienced in keyword research, content optimization, and CMS publishing to support organic traffic growth and search visibility.",
+  },
+  work: {
+    title: "Work Experience",
+    jobs: [
+      {
+        id: 1,
+        company: "BitDegree",
+        role: "News Writer and Editor",
+        duration: "Nov 2024 - Feb 2026",
+        description: [
+          "Produced 16 SEO-optimized news articles per day about cryptocurrencies, crypto exchanges, cybersecurity, and AI",
+          "Created announcements to help attract more users to participate in the company's campaigns",
+          "Used Google Search Console to research trends and monitor traffic growth per article",
+          "Edited and optimized articles for SEO structure, clarity, and readability before publication",
+          "Leveraged ChatGPT and Perplexity to help research the latest breaking news",
+        ],
+      },
+      {
+        id: 2,
+        company: "BitDegree",
+        role: "SEO Content Writer",
+        duration: "May 2024 - Nov 2024",
+        description: [
+          "Created SEO-optimized articles, including tutorials and reviews about cryptocurrencies, crypto exchanges, and money transfer platforms",
+          "Implemented on-page SEO best practices, including keyword placement, heading structure, and internal linking",
+          "Produced evergreen content aligned with audience needs and search intent",
+          "Supported organic search visibility through consistent content production",
+        ],
+      },
+      {
+        id: 3,
+        company: "Self-Employed",
+        role: "Freelance SEO Content Writer",
+        duration: "Aug 2023 - Now",
+        description: [
+          "Created SEO-optimized articles and blog content for various clients and industries",
+          "Applied keyword research and SEO best practices to improve content performance",
+          "Adapted writing style to match client brand voice and target audience",
+          "Used ChatGPT, Gemini, and Perplexity to help research keywords",
+        ],
+      },
+      {
+        id: 4,
+        company: "WordPress.org",
+        role: "Documentation Contributor",
+        duration: "Sept 2022 - Aug 2023",
+        description: [
+          "Contributed to official WordPress documentation by creating and updating technical content for new features, blocks, and settings",
+          "Translated technical concepts into user-friendly documentation to improve usability and accessibility",
+          "Collaborated with global open-source contributors to support documentation quality and consistency",
+        ],
+      },
+      {
+        id: 5,
+        company: "Hostinger",
+        role: "SEO Content Writer",
+        duration: "Aug 2021 - Aug 2023",
+        description: [
+          "Produced SEO-optimized tutorials and blog content focused on web hosting, website development, and digital marketing",
+          "Conducted keyword research and applied SEO best practices to improve search visibility",
+          "Optimized content using Surfer SEO to align with SEO performance standards",
+          "Collaborated with the editorial team to maintain content quality and workflow",
+        ],
+      },
+      {
+        id: 6,
+        company: "Saung Writer",
+        role: "English and Indonesian SEO Content Writer",
+        duration: "June - Aug 2021",
+        description: [
+          "Produced SEO-friendly content across business, technology, and digital marketing topics",
+          "Optimized content using Yoast SEO",
+          "Published and managed articles using WordPress CMS",
+        ],
+      },
+    ],
+  },
+};
