@@ -12,28 +12,34 @@
   font-size: var(--text-h2);
 }
 
-.portfolio-header p {
-  font-size: var(--text-body);
-}
-
 .description {
   text-align: center;
   font-weight: 500;
-  margin-top: var(--space-3);
-  margin-bottom: var(--space-3);
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .portfolio-content {
-  padding-bottom: 6rem; /* to prevent content from being hidden behind the fixed navbar */
+  padding-bottom: 4rem;
+  /* to prevent content from being hidden behind the fixed navbar */
 }
 
 .bitdegree,
 .hostinger,
 .wordpress {
   margin-bottom: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bitdegree-logo {
+  width: 125px;
+  margin: var(--space-4);
+}
+
+.hostinger-logo,
+.wordpress-logo {
+  width: 200px;
 }
 
 .line-break {
