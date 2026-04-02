@@ -11,16 +11,23 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: var(--space-2);
-  margin: var(--space-4) var(--space-4) 0 var(--space-4);
+  gap: var(--space-3);
+  margin: var(--space-4);
   padding: var(--space-2);
   background-color: var(--snow-storm-nord5);
-  box-shadow: 7px 7px 2px var(--pollar-night-nord3);
   height: fit-content;
   border-radius: 15px;
+  border: hairline solid var(--pollar-night-nord3);
+}
+
+.card:hover {
+  box-shadow: 6px 6px 3px var(--pollar-night-nord3);
+  transition: all 0.2s ease-in-out;
 }
 
 .button {
+  display: flex;
+  align-items: center;
   background-color: var(--frost-nord7);
   padding: var(--space-1);
   border-radius: 5px;
@@ -31,4 +38,11 @@ h3 {
 
 .button:hover {
   background-color: var(--frost-nord8);
+  box-shadow: 2px 2px 4px var(--pollar-night-nord3);
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow-button {
+  width: var(--space-3);
+  margin-left: 3px;
 }
