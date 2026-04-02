@@ -1,0 +1,75 @@
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-1);
+  text-align: center;
+}
+
+.resume-header h2 {
+  font-size: var(--text-h2);
+}
+
+.resume-content {
+  padding-bottom: 4rem;
+}
+
+.about,
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: var(--space-4);
+}
+
+.role {
+  font-weight: bold;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin: var(--space-1) 0;
+}
+
+.company {
+  width: fit-content;
+}
+
+.spacer {
+  border-right: 2px solid var(--pollar-night-nord3);
+  height: 20px;
+}
+
+.duration {
+  width: fit-content;
+  font-style: italic;
+}
+
+.job-container,
+.about-desc {
+  display: flex;
+  flex-direction: column;
+  border: hairline solid var(--pollar-night-nord3);
+  background-color: var(--snow-storm-nord5);
+  padding: var(--space-2);
+  border-radius: 15px;
+}
+
+.job-container:hover,
+.about-desc:hover {
+  box-shadow: 6px 6px 3px var(--pollar-night-nord3);
+  transition: all 0.2s ease-in-out;
+}
+
+.jobdesc {
+  padding-left: var(--space-3);
+}
+
+.jobdesc-list {
+  list-style-type: circle;
+  margin-bottom: 6px;
+}
