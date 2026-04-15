@@ -10,15 +10,18 @@ function bitdegreeCard() {
     <section className="cards">
       {bitdegreeArticles.map((article) => (
         <div key={article.id} className="card bitdegree-articles">
-          <h3>{article.title}</h3>
-          <p>{article.description}</p>
+          <h3 className="card-title">{article.title}</h3>
+          <p className="card-text">{article.description}</p>
+          <div className="line-break-container">
+            <hr className="card-line-break" />
+          </div>
           <a
             href={article.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="button"
+            className="read-article"
           >
-            <p>Read More</p>
+            Read More
             <svg
               className="arrow-button"
               xmlns="http://www.w3.org/2000/svg"
@@ -38,15 +41,18 @@ function hostingerCard() {
     <section className="cards">
       {hostingerArticles.map((article) => (
         <div key={article.id} className="card hostinger-articles">
-          <h3>{article.title}</h3>
-          <p>{article.description}</p>
+          <h3 className="card-title">{article.title}</h3>
+          <p className="card-text">{article.description}</p>
+          <div className="line-break-container">
+            <hr className="card-line-break" />
+          </div>
           <a
             href={article.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="button"
+            className="read-article"
           >
-            <p>Read More</p>
+            Read More
             <svg
               className="arrow-button"
               xmlns="http://www.w3.org/2000/svg"
@@ -66,15 +72,18 @@ function wordpressCard() {
     <section className="cards">
       {wordpressArticles.map((article) => (
         <div key={article.id} className="card wordpress-articles">
-          <h3>{article.title}</h3>
-          <p>{article.description}</p>
+          <h3 className="card-title">{article.title}</h3>
+          <p className="card-text">{article.description}</p>
+          <div className="line-break-container">
+            <hr className="card-line-break" />
+          </div>
           <a
             href={article.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="button"
+            className="read-article"
           >
-            <p>Read More</p>
+            Read More
             <svg
               className="arrow-button"
               xmlns="http://www.w3.org/2000/svg"
