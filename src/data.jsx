@@ -121,7 +121,7 @@ export const resumeData = {
   about: {
     title: "About Me",
     description:
-      "SEO content specialist who focuses on creating search-optimized content for global technology companies. Experienced in keyword research, content optimization, and CMS publishing to support organic traffic growth and search visibility.",
+      "SEO content specialist who focuses on creating search-optimized content to support organic traffic growth and search visibility.",
   },
   work: {
     title: "Work Experience",
@@ -189,13 +189,30 @@ export const resumeData = {
       {
         id: 6,
         company: "Saung Writer",
-        role: "English and Indonesian SEO Content Writer",
+        role: "Part-Time SEO Content Writer",
         duration: "June - Aug 2021",
         description: [
           "Produced SEO-friendly content across business, technology, and digital marketing topics",
           "Optimized content using Yoast SEO",
           "Published and managed articles using WordPress CMS",
         ],
+      },
+    ],
+  },
+  techStack: {
+    title: "Tech Stack",
+    list: [
+      {
+        id: 1,
+        tech: "WordPress",
+      },
+      {
+        id: 2,
+        tech: "Surfer SEO",
+      },
+      {
+        id: 3,
+        tech: "Google Search Console",
       },
     ],
   },
