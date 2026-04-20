@@ -28,34 +28,39 @@
 }
 
 .about-title,
-.experience-title {
+.experience-title,
+.tech-stack-title {
   font-size: var(--text-h3);
   margin-bottom: var(--space-3);
 }
 
 .role {
   font-weight: bold;
+  width: 100%;
+  background-color: var(--aurora-nord14);
+  padding: var(--space-1) var(--space-2);
 }
 
 .detail {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--space-1);
-  margin: var(--space-1) 0;
+  padding: var(--space-1) var(--space-2);
 }
 
 .company {
   width: fit-content;
-}
-
-.spacer {
-  border-right: 2px solid var(--pollar-night-nord3);
-  height: 20px;
+  background-color: var(--frost-nord8);
+  padding: 5px;
+  border: hairline solid var(--pollar-night-nord3);
 }
 
 .duration {
   width: fit-content;
-  font-style: italic;
+  background-color: var(--aurora-nord13);
+  padding: 5px;
+  border: hairline solid var(--pollar-night-nord3);
 }
 
 .job-container {
@@ -66,10 +71,14 @@
   gap: var(--space-2);
 }
 
-.jobrole-container,
 .about-desc,
 .jobdesc {
   padding: var(--space-2);
+  border: 2px solid var(--pollar-night-nord3);
+  box-shadow: 6px 6px 0 var(--pollar-night-nord3);
+}
+
+.jobrole-container {
   border: 2px solid var(--pollar-night-nord3);
   box-shadow: 6px 6px 0 var(--pollar-night-nord3);
 }
@@ -80,7 +89,7 @@
 }
 
 .jobdesc-list {
-  list-style-type: circle;
+  list-style-type: square;
   margin-bottom: 6px;
 }
 
@@ -88,6 +97,39 @@
 .role,
 .company,
 .duration,
-.jobdesc-list p {
+.jobdesc-list p,
+.list-text {
   font-size: var(--text-body);
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--pollar-night-nord3);
+  box-shadow: 6px 6px 0 var(--pollar-night-nord3);
+  min-width: 120px;
+}
+
+.tech-list i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--pollar-night-nord0);
+  padding: var(--space-2) 0;
+}
+
+.list-text {
+  width: 100%;
+  text-align: center;
+  background-color: var(--aurora-nord12);
+  padding: 2px 10px;
 }

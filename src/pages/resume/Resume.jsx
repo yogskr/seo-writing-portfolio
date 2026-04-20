@@ -21,7 +21,14 @@ export function Resume() {
         <hr className="line-break" />
         <div className="tech-stack">
           <h3 className="tech-stack-title">{resumeData.techStack.title}</h3>
-          <div className="tech-stack-container"></div>
+          <div className="tech-stack-container">
+            {resumeData.techStack.list.map((list) => (
+              <div key={list.id} className="tech-list">
+                <i className={list.icon}></i>
+                <p className="list-text">{list.tech}</p>
+              </div>
+            ))}
+          </div>
         </div>
         {/* ===== Work Experience ===== */}
         <hr className="line-break" />
