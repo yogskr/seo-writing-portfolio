@@ -48,7 +48,7 @@
 
 .read-article:hover {
   cursor: pointer;
-  background-color: var(--snow-storm-nord6);
+  background-color: var(--aurora-nord14);
   border: 2px solid var(--pollar-night-nord3);
   color: var(--pollar-night-nord0);
   transition: all 0.3s ease-in-out;
