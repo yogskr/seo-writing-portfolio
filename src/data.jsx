@@ -121,7 +121,7 @@ export const resumeData = {
   about: {
     title: "About Me",
     description:
-      "SEO content specialist who focuses on creating search-optimized content to support organic traffic growth and search visibility.",
+      "SEO content specialist focusing on creating search-optimized content to support organic traffic growth and search visibility.",
   },
   work: {
     title: "Work Experience",
@@ -165,7 +165,7 @@ export const resumeData = {
       },
       {
         id: 4,
-        company: "WordPress.org",
+        company: "WordPress",
         role: "Documentation Contributor",
         duration: "Sept 2022 - Aug 2023",
         description: [
@@ -205,15 +205,35 @@ export const resumeData = {
       {
         id: 1,
         tech: "WordPress",
+        icon: "fa-brands fa-wordpress",
       },
       {
         id: 2,
-        tech: "Surfer SEO",
+        tech: "Elementor",
+        icon: "fa-brands fa-elementor",
       },
       {
         id: 3,
+        tech: "Surfer SEO",
+        icon: "fa-brands fa-sistrix",
+      },
+      {
+        id: 4,
+        tech: "Yoast SEO",
+        icon: "fa-brands fa-yoast",
+      },
+      {
+        id: 5,
         tech: "Google Search Console",
+        icon: "fa-brands fa-google",
+      },
+      {
+        id: 6,
+        tech: "HTML • CSS • JavaScript",
+        icon: "fa-solid fa-code",
       },
     ],
   },
 };
+
+// Contact data
