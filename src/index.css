@@ -1,11 +1,19 @@
+/* Patua One */
 @import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 
+/* Lexend */
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+/* Cascadia Code */
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
   /* font family */
-  --font-heading: "Patua One", serif;
-  --font-body: "Lexend", sans-serif;
+  --font-heading: "JetBrains Mono", serif;
+  --font-body: "Cascadia Code", sans-serif;
 
   /* color palettes */
   /* reference: https://www.nordtheme.com/docs/colors-and-palettes */
@@ -33,12 +41,18 @@
   --aurora-nord15: #b48ead;
 
   /* typography */
-  --text-display: clamp(2rem, 5vw, 3.5rem); /* hero title */
-  --text-h1: clamp(1.75rem, 3vw, 2.25rem); /* section headings */
-  --text-h2: clamp(1.5rem, 2.5vw, 1.75rem); /* subsection headings */
-  --text-h3: clamp(1.25rem, 2vw, 1.375rem); /* cards, article titles */
-  --text-body: clamp(1rem, 1.2vw, 1.125rem); /* paragraph text */
-  --text-small: 0.875rem; /* metadata */
+  --text-display: clamp(2rem, 5vw, 3.5rem);
+  /* hero title */
+  --text-h1: clamp(1.75rem, 3vw, 2.25rem);
+  /* section headings */
+  --text-h2: clamp(1.5rem, 2.5vw, 1.75rem);
+  /* subsection headings */
+  --text-h3: clamp(1.25rem, 2vw, 1.375rem);
+  /* cards, article titles */
+  --text-body: clamp(1rem, 1.2vw, 1.125rem);
+  /* paragraph text */
+  --text-small: 0.875rem;
+  /* metadata */
 
   /* spacing */
   --space-1: 0.5rem;
