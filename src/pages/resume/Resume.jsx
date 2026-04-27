@@ -1,15 +1,21 @@
 import { resumeData } from "../../data";
+import { useIsScrolled } from "../../hooks/stickyHeader";
 import "./Resume.css";
 
 export function Resume() {
+  const isScrolled = useIsScrolled();
+
   return (
     <div className="resume-container">
-      <section className="resume-header">
+      <section
+        className={isScrolled ? "resume-header scrolled" : "resume-header"}
+      >
         <h2 className="resume-title">{resumeData.header.title}</h2>
       </section>
       {/* ===== About Me ===== */}
       <section className="resume-content">
         <hr className="line-break" />
+
         <div className="about">
           <h3 className="about-title">{resumeData.about.title}</h3>
           <p className="about-desc">{resumeData.about.description}</p>
@@ -17,6 +23,7 @@ export function Resume() {
             <ul></ul>
           </div>
         </div>
+
         {/* ===== Tech Stack ===== */}
         <hr className="line-break" />
         <div className="tech-stack">
@@ -30,6 +37,7 @@ export function Resume() {
             ))}
           </div>
         </div>
+
         {/* ===== Work Experience ===== */}
         <hr className="line-break" />
         <div className="experience">
