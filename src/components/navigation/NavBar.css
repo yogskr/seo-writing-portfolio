@@ -5,8 +5,14 @@ nav {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 4rem;
+  margin: 0 var(--space-3);
+}
+
+.navbar.with-bg {
+  justify-content: space-evenly;
+  margin: 0;
 }
 
 .nav-container.with-bg {
@@ -16,8 +22,13 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
   z-index: 100;
+  box-shadow: 0 0 5px var(--pollar-night-nord0);
+  clip-path: inset(-15px 0px 0px 0px);
+}
+
+.nav-container.with-bg .link-title {
+  display: none;
 }
 
 .navlink {
@@ -25,11 +36,32 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: var(--space-1);
-  padding: var(--space-1);
   height: fit-content;
+  border: 2px solid var(--pollar-night-nord3);
+  box-shadow: 4px 4px 0 var(--pollar-night-nord3);
+  width: 6.5rem;
+  min-width: fit-content;
+}
+
+.navlink.with-bg {
+  border: none;
+  box-shadow: none;
+  width: fit-content;
 }
 
 .navlink.active {
   border-bottom: 2px solid var(--snow-storm-nord6);
+}
+
+.nav-icon {
+  font-size: var(--space-3);
+  padding: var(--space-1) var(--space-2);
+}
+
+.link-title {
+  text-align: center;
+  font-size: var(--text-body);
+  width: 100%;
+  background-color: var(--aurora-nord13);
+  padding: 0.25rem 0.5rem;
 }

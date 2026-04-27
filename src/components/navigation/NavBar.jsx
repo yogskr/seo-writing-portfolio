@@ -16,15 +16,15 @@ export function NavBar({ showNavBar, currentPath }) {
 
   return (
     <nav className={showNavBar ? "nav-container with-bg" : "nav-container"}>
-      <ul className="navbar">
+      <ul className={showNavBar ? "navbar with-bg" : "navbar"}>
         {filteredLinks.map((link) => (
           <li key={link.name}>
             <Link
-              className={`navlink ${path === link.url ? "active" : ""}`}
+              className={`navlink ${showNavBar ? "with-bg" : ""} ${path === link.url ? "active" : ""}`}
               to={link.url}
             >
               <i className={link.icon}></i>
-              {!showNavBar && link.name}
+              <p className="link-title">{link.name}</p>
             </Link>
           </li>
         ))}
