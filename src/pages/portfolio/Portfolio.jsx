@@ -5,15 +5,25 @@ import {
   hostingerCard,
   wordpressCard,
 } from "../../components/cards/Cards";
+import { useIsScrolled } from "../../hooks/stickyHeader";
 
 export function Portfolio() {
+  const isScrolled = useIsScrolled();
+
   return (
     <div className="portfolio-container">
-      <section className="portfolio-header">
+      <section
+        className={
+          isScrolled ? "portfolio-header scrolled" : "portfolio-header"
+        }
+      >
         <h2 className="portfolio-title">{portfolioData.header.title}</h2>
       </section>
+      <hr className="line-break" />
       <section className="portfolio-content">
-        <hr className="line-break" />
+        <p className="portfolio-description">
+          {portfolioData.header.description}
+        </p>
         <div className="bitdegree">
           <img
             src={portfolioData.logos.bitdegree}
