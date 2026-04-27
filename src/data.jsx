@@ -1,21 +1,28 @@
+import submitIcon from "./assets/icons/arrow-right-square.svg";
+import readMoreIcon from "./assets/icons/square-up-right.svg";
+
 // Hero data
 export const heroData = {
   title: "Blasius Yoga Puspa Krisanta",
-  description: "I'm ",
+  description: "Hi, I'm ",
   image: "yoga-krisanta.png",
 };
 
 // Navigation Bar data
 export const navData = {
   links: [
-    { name: "Home", url: "/", icon: "fa-solid fa-house fa-2x" },
+    { name: "Home", url: "/", icon: "fa-solid fa-cube nav-icon" },
     {
       name: "Portfolio",
       url: "/portfolio",
-      icon: "fa-solid fa-briefcase fa-2x",
+      icon: "fa-solid fa-box-archive nav-icon",
     },
-    { name: "Resume", url: "/resume", icon: "fa-solid fa-file-lines fa-2x" },
-    { name: "Contact", url: "/contact", icon: "fa-solid fa-envelope fa-2x" },
+    { name: "Resume", url: "/resume", icon: "fa-solid fa-briefcase nav-icon" },
+    {
+      name: "Contact",
+      url: "/contact",
+      icon: "fa-solid fa-paper-plane nav-icon",
+    },
   ],
 };
 
@@ -23,19 +30,25 @@ export const navData = {
 export const homeData = {
   title: "Explaining Technology, One Article at a Time",
   description:
-    "Technology moves fast, and good explanations matter. I specialized in creating search-optimized articles that break down AI, cryptocurrencies, SaaS, and cybersecurity that's clear, practical, and easy to follow.",
+    "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
 };
 
 // Portfolio data
 export const portfolioData = {
   header: {
     title: "Portfolio",
+    description:
+      "Published and ranking articles from companies I've worked for",
   },
   companies: ["BitDegree", "Hostinger", "WordPress"],
   logos: {
     bitdegree: "bitdegree.png",
     hostinger: "hostinger.png",
     wordpress: "wordpress.png",
+  },
+  readMore: {
+    title: "Read More",
+    icon: readMoreIcon,
   },
 };
 
@@ -237,3 +250,69 @@ export const resumeData = {
 };
 
 // Contact data
+export const contactData = {
+  header: {
+    title: "Get in Touch",
+    description:
+      "Let's discuss work opportunity, writing projects, and collaborations.",
+  },
+  formFields: {
+    name: {
+      label: "Name",
+      type: "text",
+      placeholder: "Your full name",
+      required: true,
+    },
+    email: {
+      label: "Email",
+      type: "email",
+      placeholder: "your.email@example.com",
+      required: true,
+    },
+    subject: {
+      label: "Subject",
+      type: "text",
+      placeholder: "What's this about?",
+      required: true,
+    },
+    message: {
+      label: "Message",
+      type: "textarea",
+      placeholder: "Tell me more about your project or inquiry...",
+      required: true,
+    },
+    company: {
+      label: "Company/Organization",
+      type: "text",
+      placeholder: "Your company (optional)",
+      required: false,
+    },
+  },
+  directContact: {
+    email: "yogakrisanta@gmail.com",
+    socialLinks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/yogakrisanta/",
+        icon: "fa-brands fa-linkedin",
+      },
+      {
+        name: "Twitter",
+        url: "https://www.threads.net/yogskr",
+        icon: "fa-brands fa-square-threads",
+      },
+      {
+        name: "GitHub",
+        url: "https://www.github.com/yogskr",
+        icon: "fa-brands fa-github",
+      },
+    ],
+  },
+  sendButton: {
+    icon: submitIcon,
+    sucessMessage:
+      "Thank you! Your message has been sent successfully. I'll get back to you soon.",
+    errorMessage:
+      "Sorry, there was an error sending your message. Please try again or contact me directly.",
+  },
+};
