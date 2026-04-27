@@ -1,20 +1,25 @@
 import "./Home.css";
-import { heroData } from "../../data";
+import { heroData, homeData } from "../../data";
 import { NavBar } from "../../components/navigation/NavBar";
 import RotatingText from "../../components/rotating-text/RotatingText";
 
 export function Home() {
   return (
     <div className="home">
+      <h1 className="hero-title">
+        {heroData.description}
+        <RotatingText />
+      </h1>
+
       <section className="hero">
         <img className="heroImage" src={heroData.image} alt={heroData.title} />
-        <h1>{heroData.title}</h1>
-        <p>
-          {heroData.description}
-          <RotatingText />
-        </p>
+        <div className="hero-description">
+          <p className="hero-name">{heroData.title}</p>
+          <p className="hero-text">{homeData.description}</p>
+        </div>
+        <hr className="line-break" />
+        <NavBar />
       </section>
-      <NavBar />
     </div>
   );
 }
