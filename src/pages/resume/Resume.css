@@ -1,8 +1,11 @@
-.resume-header {
+.resume-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+
+.resume-header {
+  text-align: center;
+  width: 100%;
   padding: var(--space-2) var(--space-1);
   text-align: center;
   position: sticky;
@@ -22,7 +25,9 @@
 }
 
 .resume-content {
+  align-self: center;
   padding-bottom: 4rem;
+  width: 90%;
 }
 
 .about,
@@ -30,7 +35,7 @@
 .tech-stack {
   display: flex;
   flex-direction: column;
-  margin: var(--space-4);
+  margin: var(--space-4) 0;
 }
 
 .experience {
@@ -40,6 +45,7 @@
 .about-title,
 .experience-title,
 .tech-stack-title {
+  text-align: center;
   font-size: var(--text-h3);
   margin-bottom: var(--space-3);
 }
@@ -115,6 +121,7 @@
 
 .tech-stack-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: var(--space-3);
 }
@@ -143,4 +150,17 @@
   text-align: center;
   background-color: var(--aurora-nord12);
   padding: 2px 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .resume-content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .resume-content {
+    width: 85%;
+  }
 }

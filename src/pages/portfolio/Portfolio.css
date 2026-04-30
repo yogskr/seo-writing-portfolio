@@ -1,3 +1,9 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .portfolio-header {
   display: flex;
   flex-direction: column;
@@ -11,6 +17,7 @@
   background-color: var(--snow-storm-nord6);
   border-bottom: none;
   transition: box-shadow 0.3s ease;
+  width: 100%;
 }
 
 .portfolio-header.scrolled {
@@ -26,12 +33,13 @@
   text-align: center;
   font-weight: 600;
   line-height: 1.6;
-  margin: var(--space-2) var(--space-4);
+  margin: var(--space-2) 0;
 }
 
 .portfolio-content {
   padding-bottom: 4rem;
   /* to prevent content from being hidden behind the fixed navbar */
+  width: 90%;
 }
 
 .bitdegree,
@@ -53,12 +61,23 @@
   width: 200px;
 }
 
-.line-break {
-  width: 85%;
-  border: 2px solid var(--pollar-night-nord3);
-  margin: auto;
-}
-
 .card-text {
   line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .line-break {
+    width: 90%;
+  }
+
+  .portfolio-content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-content {
+    width: 85%;
+  }
 }

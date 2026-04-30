@@ -1,23 +1,22 @@
 .home {
-  position: relative;
-  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
 }
 
-.hero {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  width: 90%;
+}
+
+.hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   gap: var(--space-4);
-  width: 100%;
 }
 
 .heroImage {
@@ -28,7 +27,7 @@
 
 .hero-title {
   text-align: center;
-  font-size: var(--text-h3);
+  font-size: var(--text-body);
   color: var(--snow-storm-nord6);
   width: 100%;
   background-color: var(--pollar-night-nord0);
@@ -38,7 +37,6 @@
 .hero-description {
   border: 2px solid var(--pollar-night-nord3);
   box-shadow: 6px 6px 0 var(--pollar-night-nord3);
-  margin: 0 var(--space-3);
 }
 
 .hero-name {
@@ -53,4 +51,25 @@
   font-size: var(--text-body);
   padding: var(--space-1) var(--space-2);
   line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .home {
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    width: 65%;
+  }
+
+  .heroImage {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    width: 70%;
+  }
 }
