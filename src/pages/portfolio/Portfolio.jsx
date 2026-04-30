@@ -19,8 +19,8 @@ export function Portfolio() {
       >
         <h2 className="portfolio-title">{portfolioData.header.title}</h2>
       </section>
-      <hr className="line-break" />
       <section className="portfolio-content">
+        <hr className="line-break" />
         <p className="portfolio-description">
           {portfolioData.header.description}
         </p>
