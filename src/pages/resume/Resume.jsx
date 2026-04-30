@@ -15,7 +15,6 @@ export function Resume() {
       {/* ===== About Me ===== */}
       <section className="resume-content">
         <hr className="line-break" />
-
         <div className="about">
           <h3 className="about-title">{resumeData.about.title}</h3>
           <p className="about-desc">{resumeData.about.description}</p>
@@ -25,7 +24,6 @@ export function Resume() {
         </div>
 
         {/* ===== Tech Stack ===== */}
-        <hr className="line-break" />
         <div className="tech-stack">
           <h3 className="tech-stack-title">{resumeData.techStack.title}</h3>
           <div className="tech-stack-container">
