@@ -18,8 +18,9 @@ export function NavBar({ showNavBar, currentPath }) {
     <nav className={showNavBar ? "nav-container with-bg" : "nav-container"}>
       <ul className={showNavBar ? "navbar with-bg" : "navbar"}>
         {filteredLinks.map((link) => (
-          <li key={link.name}>
+          <li key={link.id}>
             <Link
+              id={link.id}
               className={`navlink ${showNavBar ? "with-bg" : ""} ${path === link.url ? "active" : ""}`}
               to={link.url}
             >
