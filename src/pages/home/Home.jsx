@@ -10,15 +10,20 @@ export function Home() {
         {heroData.description}
         <RotatingText />
       </h1>
-
-      <section className="hero">
-        <img className="heroImage" src={heroData.image} alt={heroData.title} />
-        <div className="hero-description">
-          <p className="hero-name">{heroData.title}</p>
-          <p className="hero-text">{homeData.description}</p>
+      <section className="hero-container">
+        <div className="hero-content">
+          <img
+            className="heroImage"
+            src={heroData.image}
+            alt={heroData.title}
+          />
+          <div className="hero-description">
+            <p className="hero-name">{heroData.title}</p>
+            <p className="hero-text">{homeData.description}</p>
+          </div>
+          <hr className="line-break" />
+          <NavBar />
         </div>
-        <hr className="line-break" />
-        <NavBar />
       </section>
     </div>
   );
