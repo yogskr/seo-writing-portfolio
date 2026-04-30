@@ -11,14 +11,21 @@ export const heroData = {
 // Navigation Bar data
 export const navData = {
   links: [
-    { name: "Home", url: "/", icon: "fa-solid fa-cube nav-icon" },
+    { id: "home", name: "Home", url: "/", icon: "fa-solid fa-cube nav-icon" },
     {
+      id: "portfolio",
       name: "Portfolio",
       url: "/portfolio",
       icon: "fa-solid fa-box-archive nav-icon",
     },
-    { name: "Resume", url: "/resume", icon: "fa-solid fa-briefcase nav-icon" },
     {
+      id: "resume",
+      name: "Resume",
+      url: "/resume",
+      icon: "fa-solid fa-briefcase nav-icon",
+    },
+    {
+      id: "contact",
       name: "Contact",
       url: "/contact",
       icon: "fa-solid fa-paper-plane nav-icon",
@@ -130,11 +137,12 @@ export const wordpressArticles = [
 export const resumeData = {
   header: {
     title: "Resume",
+    description: "My work experience, skills, and tech stack",
   },
   about: {
     title: "About Me",
     description:
-      "SEO content specialist focusing on creating search-optimized content to support organic traffic growth and search visibility.",
+      "SEO content specialist focusing on search-optimized content creation to support organic traffic growth and search visibility.",
   },
   work: {
     title: "Work Experience",
