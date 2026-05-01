@@ -1,6 +1,6 @@
 import "./Cards.css";
 import {
-  portfolioData,
+  workData,
   bitdegreeArticles,
   hostingerArticles,
   wordpressArticles,
@@ -22,10 +22,10 @@ function bitdegreeCard() {
             rel="noopener noreferrer"
             className="read-article"
           >
-            {portfolioData.readMore.title}
+            {workData.readMore.title}
             <img
               className="arrow-button"
-              src={portfolioData.readMore.icon}
+              src={workData.readMore.icon}
               alt="Square arrow right up"
             />
           </a>
@@ -51,10 +51,10 @@ function hostingerCard() {
             rel="noopener noreferrer"
             className="read-article"
           >
-            {portfolioData.readMore.title}
+            {workData.readMore.title}
             <img
               className="arrow-button"
-              src={portfolioData.readMore.icon}
+              src={workData.readMore.icon}
               alt="Square arrow right up"
             />
           </a>
@@ -80,10 +80,10 @@ function wordpressCard() {
             rel="noopener noreferrer"
             className="read-article"
           >
-            {portfolioData.readMore.title}
+            {workData.readMore.title}
             <img
               className="arrow-button"
-              src={portfolioData.readMore.icon}
+              src={workData.readMore.icon}
               alt="Square arrow right up"
             />
           </a>
