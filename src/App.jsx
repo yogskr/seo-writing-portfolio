@@ -8,7 +8,7 @@ import {
 import { motion, AnimatePresence } from "motion/react";
 import { NavBar } from "./components/navigation/NavBar";
 import { Home } from "./pages/home/Home";
-import { Portfolio } from "./pages/portfolio/Portfolio";
+import { Work } from "./pages/work/Work";
 import { Contact } from "./pages/contact/Contact";
 import { Resume } from "./pages/resume/Resume";
 import "./App.css";
@@ -16,13 +16,13 @@ import "./App.css";
 // Route configuration
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/portfolio", element: <Portfolio /> },
+  { path: "/work", element: <Work /> },
   { path: "/resume", element: <Resume /> },
   { path: "/contact", element: <Contact /> },
 ];
 
 // Pages that should show the navigation bar
-const pagesWithNavBar = ["/portfolio", "/resume", "/contact"];
+const pagesWithNavBar = ["/work", "/resume", "/contact"];
 
 // Page transition variants
 const pageVariants = {
