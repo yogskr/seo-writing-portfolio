@@ -13,9 +13,9 @@ export const navData = {
   links: [
     { id: "home", name: "Home", url: "/", icon: "fa-solid fa-cube nav-icon" },
     {
-      id: "portfolio",
-      name: "Portfolio",
-      url: "/portfolio",
+      id: "work",
+      name: "Work",
+      url: "/work",
       icon: "fa-solid fa-box-archive nav-icon",
     },
     {
@@ -40,10 +40,10 @@ export const homeData = {
     "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
 };
 
-// Portfolio data
-export const portfolioData = {
+// Work data
+export const workData = {
   header: {
-    title: "Portfolio",
+    title: "Work",
     description:
       "Published and ranking articles from companies I've worked for",
   },
