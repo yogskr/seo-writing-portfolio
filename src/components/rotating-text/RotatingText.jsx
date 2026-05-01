@@ -8,7 +8,7 @@ export default function RotatingText() {
 
   useEffect(() => {
     const phrases = [
-      "SEO Content Writer",
+      "Content Writer",
       "News Writer",
       "Content Editor",
       "Web Developer",
