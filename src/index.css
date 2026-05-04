@@ -1,69 +1,40 @@
-/* Patua One */
-@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
-
-/* Lexend */
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+/* JetBrains Mono */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 /* Cascadia Code */
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap");
 
-/* JetBrains Mono */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
 
-:root {
+@theme {
   /* font family */
-  --font-heading: "JetBrains Mono", serif;
-  --font-body: "Cascadia Code", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", serif;
+  --font-cascadia-code: "Cascadia Code", sans-serif;
 
   /* color palettes */
   /* reference: https://www.nordtheme.com/docs/colors-and-palettes */
   /* dark colors */
-  --pollar-night-nord0: #2e3440;
-  --pollar-night-nord1: #3b4252;
-  --pollar-night-nord2: #434c5e;
-  --pollar-night-nord3: #4c566a;
+  --color-pollar-night-nord0: #2e3440;
+  --color-pollar-night-nord1: #3b4252;
+  --color-pollar-night-nord2: #434c5e;
+  --color-pollar-night-nord3: #4c566a;
 
   /* light colors */
-  --snow-storm-nord4: #d8dee9;
-  --snow-storm-nord5: #e5e9f0;
-  --snow-storm-nord6: #eceff4;
+  --color-snow-storm-nord4: #d8dee9;
+  --color-snow-storm-nord5: #e5e9f0;
+  --color-snow-storm-nord6: #eceff4;
 
   /* accent colors */
-  --frost-nord7: #8fbcbb;
-  --frost-nord8: #88c0d0;
-  --frost-nord9: #81a1c1;
-  --frost-nord10: #5e81ac;
+  --color-frost-nord7: #8fbcbb;
+  --color-frost-nord8: #88c0d0;
+  --color-frost-nord9: #81a1c1;
+  --color-frost-nord10: #5e81ac;
 
-  --aurora-nord11: #bf616a;
-  --aurora-nord12: #d08770;
-  --aurora-nord13: #ebcb8b;
-  --aurora-nord14: #a3be8c;
-  --aurora-nord15: #b48ead;
-
-  /* typography */
-  --text-display: clamp(2rem, 5vw, 3.5rem);
-  /* hero title */
-  --text-h1: clamp(1.75rem, 3vw, 2.25rem);
-  /* section headings */
-  --text-h2: clamp(1.5rem, 2.5vw, 1.75rem);
-  /* subsection headings */
-  --text-h3: clamp(1.25rem, 2vw, 1.375rem);
-  /* cards, article titles */
-  --text-body: clamp(1rem, 1.2vw, 1.125rem);
-  /* paragraph text */
-  --text-small: 0.875rem;
-
-  /* spacing */
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2rem;
-  --space-5: 3rem;
-  --space-6: 4rem;
-  --space-7: 6rem;
-  --space-8: 8rem;
-  --space-9: 10rem;
-  --space-10: 12rem;
+  --color-aurora-nord11: #bf616a;
+  --color-aurora-nord12: #d08770;
+  --color-aurora-nord13: #ebcb8b;
+  --color-aurora-nord14: #a3be8c;
+  --color-aurora-nord15: #b48ead;
 }
 
 /* global styles */
@@ -105,26 +76,4 @@ a:active {
   width: 90%;
   border: 1px solid var(--pollar-night-nord3);
   margin: auto;
-}
-
-@media (min-width: 768px) {
-  :root {
-    --text-display: clamp(3rem, 5.5vw, 4.5rem);
-    --text-h1: clamp(2.25rem, 3.5vw, 3rem);
-    --text-h2: clamp(1.75rem, 2.75vw, 2.25rem);
-    --text-h3: clamp(1.375rem, 2.25vw, 1.75rem);
-    --text-body: clamp(1rem, 1.25vw, 1.125rem);
-    --text-small: 0.875rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  :root {
-    --text-display: clamp(4rem, 5vw, 5.5rem);
-    --text-h1: clamp(2.75rem, 3vw, 3.5rem);
-    --text-h2: clamp(2rem, 2.5vw, 2.75rem);
-    --text-h3: clamp(1.625rem, 1.75vw, 2rem);
-    --text-body: clamp(1.0625rem, 1.1vw, 1.25rem);
-    --text-small: 0.9375rem;
-  }
 }
