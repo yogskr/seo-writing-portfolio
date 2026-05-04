@@ -193,11 +193,6 @@ export function ContactForm({ emailjsConfig }) {
           <p className="submit-text">
             {isSubmitting ? "Sending..." : "Send Message"}
           </p>
-          <img
-            className="paper-plane"
-            src={contactData.sendButton.icon}
-            alt=""
-          />
         </button>
 
         {submitStatus === "success" && (
