@@ -11,7 +11,6 @@ import { Home } from "./pages/home/Home";
 import { Work } from "./pages/work/Work";
 import { Contact } from "./pages/contact/Contact";
 import { Resume } from "./pages/resume/Resume";
-import "./App.css";
 
 // Route configuration
 const routes = [

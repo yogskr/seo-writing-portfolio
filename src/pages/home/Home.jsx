@@ -1,7 +1,6 @@
 import { heroData, homeData } from "../../data";
 import { NavBar } from "../../components/navigation/NavBar";
 import RotatingText from "../../components/rotating-text/RotatingText";
-import "./Home.css";
 
 export function Home() {
   return (

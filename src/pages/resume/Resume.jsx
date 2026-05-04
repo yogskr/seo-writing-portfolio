@@ -1,6 +1,5 @@
 import { resumeData } from "../../data";
 import { useIsScrolled } from "../../hooks/stickyHeader";
-import "./Resume.css";
 
 export function Resume() {
   const isScrolled = useIsScrolled();

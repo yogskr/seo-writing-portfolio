@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./RotatingText.css";
 
 export default function RotatingText() {
   const [displayedText, setDisplayedText] = useState("");

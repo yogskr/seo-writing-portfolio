@@ -1,5 +1,4 @@
 import { workData } from "../../data";
-import "./Work.css";
 import {
   bitdegreeCard,
   hostingerCard,

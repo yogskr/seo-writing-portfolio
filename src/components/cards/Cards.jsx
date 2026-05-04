@@ -1,4 +1,3 @@
-import "./Cards.css";
 import {
   workData,
   bitdegreeArticles,

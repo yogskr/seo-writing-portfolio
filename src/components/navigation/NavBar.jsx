@@ -1,4 +1,3 @@
-import "./NavBar.css";
 import { navData } from "../../data";
 import { Link, useLocation } from "react-router-dom";
 
