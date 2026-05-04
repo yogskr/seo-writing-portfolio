@@ -58,30 +58,28 @@ function MainContent() {
   }, [location.pathname]);
 
   return (
-    <main>
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          {routes.map((route) => (
-            <Route
-              key={route.path}
-              path={route.path}
-              element={
-                <MotionDiv
-                  key={location.pathname}
-                  initial="initial"
-                  animate="in"
-                  exit="out"
-                  variants={pageVariants}
-                  transition={pageTransition}
-                >
-                  {route.element}
-                </MotionDiv>
-              }
-            />
-          ))}
-        </Routes>
-      </AnimatePresence>
-    </main>
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        {routes.map((route) => (
+          <Route
+            key={route.path}
+            path={route.path}
+            element={
+              <MotionDiv
+                key={location.pathname}
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+              >
+                {route.element}
+              </MotionDiv>
+            }
+          />
+        ))}
+      </Routes>
+    </AnimatePresence>
   );
 }
 
