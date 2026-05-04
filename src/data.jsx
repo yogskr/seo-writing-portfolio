@@ -1,6 +1,3 @@
-import submitIcon from "./assets/icons/arrow-right-square.svg";
-import readMoreIcon from "./assets/icons/square-up-right.svg";
-
 // Hero data
 export const heroData = {
   title: "Blasius Yoga Puspa Krisanta",
@@ -55,7 +52,7 @@ export const workData = {
   },
   readMore: {
     title: "Read More",
-    icon: readMoreIcon,
+    icon: "fa-solid fa-square-arrow-up-right",
   },
 };
 
@@ -317,7 +314,6 @@ export const contactData = {
     ],
   },
   sendButton: {
-    icon: submitIcon,
     sucessMessage:
       "Thank you! Your message has been sent successfully. I'll get back to you soon.",
     errorMessage:
