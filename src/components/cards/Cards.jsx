@@ -22,11 +22,7 @@ function bitdegreeCard() {
             className="read-article"
           >
             {workData.readMore.title}
-            <img
-              className="arrow-button"
-              src={workData.readMore.icon}
-              alt="Square arrow right up"
-            />
+            <i className={workData.readMore.icon}></i>
           </a>
         </div>
       ))}
@@ -51,11 +47,7 @@ function hostingerCard() {
             className="read-article"
           >
             {workData.readMore.title}
-            <img
-              className="arrow-button"
-              src={workData.readMore.icon}
-              alt="Square arrow right up"
-            />
+            <i className={workData.readMore.icon}></i>
           </a>
         </div>
       ))}
@@ -80,11 +72,7 @@ function wordpressCard() {
             className="read-article"
           >
             {workData.readMore.title}
-            <img
-              className="arrow-button"
-              src={workData.readMore.icon}
-              alt="Square arrow right up"
-            />
+            <i className={workData.readMore.icon}></i>
           </a>
         </div>
       ))}
