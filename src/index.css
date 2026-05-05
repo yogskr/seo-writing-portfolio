@@ -35,45 +35,7 @@
   --color-aurora-nord13: #ebcb8b;
   --color-aurora-nord14: #a3be8c;
   --color-aurora-nord15: #b48ead;
-}
 
-/* global styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  background-color: var(--snow-storm-nord6);
-  color: var(--pollar-night-nord0);
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
-}
-
-p,
-a,
-li {
-  font-family: var(--font-body);
-  list-style-type: none;
-}
-
-a,
-a:visited,
-a:hover,
-a:focus,
-a:active {
-  color: inherit;
-  text-decoration: none;
-}
-
-.line-break {
-  width: 90%;
-  border: 1px solid var(--pollar-night-nord3);
-  margin: auto;
+  --shadow-small: 4px 4px 0 #4c566a;
+  --shadow-medium: 6px 6px 0 #4c566a;
 }

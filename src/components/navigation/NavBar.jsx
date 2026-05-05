@@ -13,18 +13,33 @@ export function NavBar({ showNavBar, currentPath }) {
   }
   const filteredLinks = navData.links.filter(shouldShowLink);
 
+  // Apply background color for each navigation item
+  const bgColors = ["bg-frost-nord9", "bg-aurora-nord14", "bg-aurora-nord12"];
+
   return (
-    <nav className={showNavBar ? "nav-container with-bg" : "nav-container"}>
-      <ul className={showNavBar ? "navbar with-bg" : "navbar"}>
-        {filteredLinks.map((link) => (
+    <nav
+      className={
+        showNavBar
+          ? "bg-pollar-night-nord0"
+          : "text-pollar-night-nord0 col-span-10 row-span-2 p-4 bg-snow-storm-nord6 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-medium"
+      }
+    >
+      <ul
+        className={
+          showNavBar
+            ? "flex items-center justify-evenly"
+            : "flex items-center justify-between h-full w-full"
+        }
+      >
+        {filteredLinks.map((link, index) => (
           <li key={link.id}>
             <Link
               id={link.id}
-              className={`navlink ${showNavBar ? "with-bg" : ""} ${path === link.url ? "active" : ""}`}
+              className={`navlink ${showNavBar ? "" : `${bgColors[index % bgColors.length]} flex flex-col items-center p-1.5 w-20 border-2 border-solid border-pollar-night-nord3 rounded-lg`} ${path === link.url ? "active" : ""}`}
               to={link.url}
             >
-              <i className={link.icon}></i>
-              <p className="link-title">{link.name}</p>
+              <i className={`text-2xl ${link.icon}`}></i>
+              <p className="font-cascadia-code">{link.name}</p>
             </Link>
           </li>
         ))}

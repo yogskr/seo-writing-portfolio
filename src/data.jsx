@@ -1,8 +1,14 @@
 // Hero data
 export const heroData = {
-  title: "Blasius Yoga Puspa Krisanta",
-  description: "Hi, I'm ",
+  title: "hi, there",
+  author: "Blasius Yoga Puspa Krisanta",
+  desc: "I'm a",
   image: "yoga-krisanta.png",
+  downloadResume: {
+    title: "Download Resume",
+    link: "https://drive.google.com/file/d/1F4hqgSGBV9IjzXLu5PNvXi478bKhG0kQ/view",
+    icon: "fa-solid fa-download",
+  },
 };
 
 // Navigation Bar data
@@ -32,17 +38,27 @@ export const navData = {
 
 // Home page data
 export const homeData = {
-  title: "Explaining Technology, One Article at a Time",
-  description:
-    "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
+  tagline: {
+    title: "specialty",
+    desc: "Content optimization specialist for organic growth",
+  },
+  // description:
+  //   "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
+  niches: {
+    title: "niche",
+    list: ["AI", "Web3", "SaaS", "Web Dev"],
+  },
+  experience: {
+    title: "experience",
+    desc: "4+ years",
+  },
 };
 
 // Work data
 export const workData = {
   header: {
     title: "Work",
-    description:
-      "Published and ranking articles from companies I've worked for",
+    description: "Published and ranking articles",
   },
   companies: ["BitDegree", "Hostinger", "WordPress"],
   logos: {

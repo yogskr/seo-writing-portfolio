@@ -35,5 +35,5 @@ export default function RotatingText() {
     return () => clearTimeout(timeout);
   }, [displayedText, isDeleting, wordIndex]);
 
-  return <span className="rotating-text">{displayedText}</span>;
+  return <span className="text-aurora-nord13">{displayedText}</span>;
 }
