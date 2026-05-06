@@ -58,13 +58,24 @@ export const homeData = {
 export const workData = {
   header: {
     title: "Work",
-    description: "Published and ranking articles",
+    description: "Published & ranking articles",
   },
-  companies: ["BitDegree", "Hostinger", "WordPress"],
-  logos: {
-    bitdegree: "bitdegree.png",
-    hostinger: "hostinger.png",
-    wordpress: "wordpress.png",
+  companies: {
+    bitdegree: {
+      title: "BitDegree",
+      desc: "Web3 Learning Platform",
+      logo: "bitdegree.png",
+    },
+    hostinger: {
+      title: "Hostinger",
+      desc: "Web Hosting Provider",
+      logo: "hostinger.png",
+    },
+    wordpress: {
+      title: "WordPress.org",
+      desc: "Open-Source Content Management System",
+      logo: "wordpress.png",
+    },
   },
   readMore: {
     title: "Read More",
@@ -91,7 +102,7 @@ export const bitdegreeArticles = [
     id: 3,
     title: "Hashmart Review",
     description:
-      "Reviews Hashmart cloud mining, covering features, pricing, profitability, and user feedback, including concerns about withdrawals and service reliability.",
+      "Reviews Hashmart cloud mining, covering features, pricing, profitability, and user feedback, including concerns about withdrawals and reliability.",
     url: "https://www.bitdegree.org/crypto/hashmart-review",
   },
 ];

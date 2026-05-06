@@ -20,7 +20,7 @@ export function NavBar({ showNavBar, currentPath }) {
     <nav
       className={
         showNavBar
-          ? "bg-pollar-night-nord0"
+          ? "bg-pollar-night-nord0 col-span-10 text-snow-storm-nord5 sticky bottom-0 z-50 p-2"
           : "text-pollar-night-nord0 col-span-10 row-span-2 p-4 bg-snow-storm-nord6 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-medium"
       }
     >
@@ -35,11 +35,13 @@ export function NavBar({ showNavBar, currentPath }) {
           <li key={link.id}>
             <Link
               id={link.id}
-              className={`navlink ${showNavBar ? "" : `${bgColors[index % bgColors.length]} flex flex-col items-center p-1.5 w-20 border-2 border-solid border-pollar-night-nord3 rounded-lg`} ${path === link.url ? "active" : ""}`}
+              className={`${showNavBar ? `flex flex-col items-center p-3 w-12 ${path === link.url ? "border-b-2 border-snow-storm-nord5" : ""}` : `${bgColors[index % bgColors.length]} flex flex-col items-center p-1.5 w-20 border-2 border-solid border-pollar-night-nord3 rounded-lg`}`}
               to={link.url}
             >
               <i className={`text-2xl ${link.icon}`}></i>
-              <p className="font-cascadia-code">{link.name}</p>
+              <p className={`${showNavBar ? "hidden" : "font-cascadia-code"}`}>
+                {link.name}
+              </p>
             </Link>
           </li>
         ))}

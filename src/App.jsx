@@ -12,6 +12,9 @@ import { Work } from "./pages/work/Work";
 import { Contact } from "./pages/contact/Contact";
 import { Resume } from "./pages/resume/Resume";
 
+// Pages that should show the navigation bar
+const pagesWithNavBar = ["/work", "/resume", "/contact"];
+
 // Route configuration
 const routes = [
   { path: "/", element: <Home /> },
@@ -19,9 +22,6 @@ const routes = [
   { path: "/resume", element: <Resume /> },
   { path: "/contact", element: <Contact /> },
 ];
-
-// Pages that should show the navigation bar
-const pagesWithNavBar = ["/work", "/resume", "/contact"];
 
 // Page transition variants
 const pageVariants = {
