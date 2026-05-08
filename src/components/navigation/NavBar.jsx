@@ -14,14 +14,14 @@ export function NavBar({ showNavBar, currentPath }) {
   const filteredLinks = navData.links.filter(shouldShowLink);
 
   // Apply background color for each navigation item
-  const bgColors = ["bg-frost-nord9", "bg-aurora-nord14", "bg-aurora-nord12"];
+  const bgColors = ["bg-frost-nord8", "bg-aurora-nord14", "bg-aurora-nord12"];
 
   return (
     <nav
       className={
         showNavBar
           ? "bg-pollar-night-nord0 col-span-10 text-snow-storm-nord5 sticky bottom-0 z-50 p-2"
-          : "text-pollar-night-nord0 col-span-10 row-span-2 p-4 bg-snow-storm-nord6 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-medium"
+          : "text-pollar-night-nord0 col-span-10 row-span-2 p-4 bg-snow-storm-nord5 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small"
       }
     >
       <ul
@@ -35,11 +35,13 @@ export function NavBar({ showNavBar, currentPath }) {
           <li key={link.id}>
             <Link
               id={link.id}
-              className={`${showNavBar ? `flex flex-col items-center p-3 w-12 ${path === link.url ? "border-b-2 border-snow-storm-nord5" : ""}` : `${bgColors[index % bgColors.length]} flex flex-col items-center p-1.5 w-20 border-2 border-solid border-pollar-night-nord3 rounded-lg`}`}
+              className={`${showNavBar ? `flex flex-col items-center p-3 w-12 ${path === link.url ? "border-b-2 border-snow-storm-nord5" : ""}` : `${bgColors[index % bgColors.length]} flex flex-col items-center p-1.5 w-20 border-2 border-solid border-pollar-night-nord3 rounded-md`}`}
               to={link.url}
             >
-              <i className={`text-2xl ${link.icon}`}></i>
-              <p className={`${showNavBar ? "hidden" : "font-cascadia-code"}`}>
+              <i className={`text-xl ${link.icon}`}></i>
+              <p
+                className={`${showNavBar ? "hidden" : "text-sm font-cascadia-code text-pollar-night-nord1 lowercase font-semibold"}`}
+              >
                 {link.name}
               </p>
             </Link>
