@@ -4,13 +4,13 @@ import RotatingText from "../../components/rotating-text/RotatingText";
 
 export function Home() {
   return (
-    <div className="grid grid-cols-10 grid-rows-12 gap-4 p-4 max-h-screen">
-      <header className="col-span-10 row-span-5 flex flex-col justify-between p-4 bg-pollar-night-nord0 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-medium">
+    <div className="grid grid-cols-10 auto-rows-auto gap-4 p-4 h-screen">
+      <header className="col-span-10 row-span-5 flex flex-col justify-between p-4 bg-pollar-night-nord0 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
         <figure className="w-full h-fit rounded-lg col-start-2 flex justify-end">
           <img
             src={heroData.image}
             alt={heroData.title}
-            className="w-32 h-fit rounded-lg border-2 border-solid border-pollar-night-nord3"
+            className="w-32 h-fit rounded-lg border-2 border-solid border-pollar-night-nord1"
           />
         </figure>
         <div className="flex flex-col gap-2 col-span-2">
@@ -27,21 +27,20 @@ export function Home() {
           </div>
         </div>
         <div className="flex items-center gap-1.5 bg-aurora-nord12 w-fit px-2 py-1 rounded-md text-pollar-night-nord0 hover:bg-aurora-nord14 transition-colors">
-          <i className={`${heroData.downloadResume.icon}`}></i>
+          <i
+            className={`${heroData.downloadResume.icon} text-pollar-nord1`}
+          ></i>
           <a
             href={heroData.downloadResume.link}
             target="_blank"
             rel="noopener norefrrer"
-            className="text-sm font-semibold"
+            className="text-sm font-semibold font-cascadia-code text-pollar-night-nord1"
           >
             {heroData.downloadResume.title}
           </a>
         </div>
       </header>
-      <div
-        id="tagline-container"
-        className="col-span-10 row-span-2 flex flex-col gap-3 bg-aurora-nord14 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-medium"
-      >
+      <div className="col-span-10 row-span-2 flex flex-col gap-3 bg-aurora-nord14 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
         <h2 className="text-sm text-pollar-night-nord1 font-cascadia-code">
           {homeData.tagline.title}
         </h2>
@@ -49,10 +48,7 @@ export function Home() {
           {homeData.tagline.desc}
         </p>
       </div>
-      <div
-        id="niche-container"
-        className="col-span-6 row-span-3 flex flex-col gap-4 bg-frost-nord9 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-medium"
-      >
+      <div className="col-span-6 row-span-3 flex flex-col gap-4 bg-frost-nord8 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
         <h2 className="text-sm text-pollar-night-nord0 font-cascadia-code bg-auro">
           {homeData.niches.title}
         </h2>
@@ -69,12 +65,12 @@ export function Home() {
       </div>
       <div
         id="experience-cotnainer"
-        className="col-span-4 row-span-3 flex flex-col gap-8 bg-aurora-nord13 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-medium"
+        className="col-span-4 row-span-3 flex flex-col gap-8 bg-aurora-nord13 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small"
       >
         <h2 className="text-sm text-pollar-night-nord1 font-cascadia-code">
           {homeData.experience.title}
         </h2>
-        <p className="font-bold text-pollar-night-nord0 text-2xl tracking-wide">
+        <p className="font-bold text-pollar-night-nord0 text-3xl tracking-wide font-jetbrains-mono">
           {homeData.experience.desc}
         </p>
       </div>
