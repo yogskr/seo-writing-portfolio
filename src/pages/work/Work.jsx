@@ -31,7 +31,7 @@ export function Work() {
               alt={workData.companies.bitdegree.title}
               className="w-28 p-2 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small bg-snow-storm-nord5"
             />
-            <figcaption className="flex items-center justify-center p-2 text-sm font-cascadia-code border-2 border-solid border-pollar-night-nord3 w-full h-full rounded-lg shadow-small bg-snow-storm-nord5 text-center ">
+            <figcaption className="lowercase flex items-center justify-center p-2 text-sm font-semibold font-cascadia-code text-pollar-night-nord1 border-2 border-solid border-pollar-night-nord3 w-full h-full rounded-lg shadow-small bg-snow-storm-nord5 text-center ">
               {workData.companies.bitdegree.desc}
             </figcaption>
           </figure>
@@ -44,7 +44,7 @@ export function Work() {
               alt={workData.companies.hostinger.title}
               className="w-28 p-1 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small  bg-snow-storm-nord5"
             />
-            <figcaption className="flex items-center justify-center p-2 text-sm font-cascadia-code border-2 border-solid border-pollar-night-nord3 w-full h-full rounded-lg shadow-small  bg-snow-storm-nord5 text-center ">
+            <figcaption className="lowercase flex items-center justify-center p-2 text-sm font-semibold font-cascadia-code text-pollar-night-nord1 border-2 border-solid border-pollar-night-nord3 w-full h-full rounded-lg shadow-small  bg-snow-storm-nord5 text-center ">
               {workData.companies.hostinger.desc}
             </figcaption>
           </figure>
@@ -57,7 +57,7 @@ export function Work() {
               alt={workData.companies.wordpress.title}
               className="w-28 p-1 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small bg-snow-storm-nord5"
             />
-            <figcaption className="flex items-center justify-center p-2 text-sm font-cascadia-code border-2 border-solid border-pollar-night-nord3 w-full h-full rounded-lg shadow-small bg-snow-storm-nord5 text-center">
+            <figcaption className="lowercase flex items-center justify-center p-2 text-sm font-semibold font-cascadia-code text-pollar-night-nord1 border-2 border-solid border-pollar-night-nord3 w-full h-full rounded-lg shadow-small bg-snow-storm-nord5 text-center">
               {workData.companies.wordpress.desc}
             </figcaption>
           </figure>
