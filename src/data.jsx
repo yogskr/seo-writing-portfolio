@@ -3,7 +3,7 @@ export const heroData = {
   title: "hi, there",
   author: "Blasius Yoga Puspa Krisanta",
   desc: "I'm a",
-  image: "yoga-krisanta.png",
+  image: "yoga-krisanta-nord.png",
   downloadResume: {
     title: "Download Resume",
     link: "https://drive.google.com/file/d/1F4hqgSGBV9IjzXLu5PNvXi478bKhG0kQ/view",
@@ -58,7 +58,7 @@ export const homeData = {
 export const workData = {
   header: {
     title: "Work",
-    description: "Published & ranking articles",
+    description: "published & ranking articles",
   },
   companies: {
     bitdegree: {
@@ -161,12 +161,16 @@ export const wordpressArticles = [
 export const resumeData = {
   header: {
     title: "Resume",
-    description: "My work experience, skills, and tech stack",
+    description: "experience ▪ skills ▪ tech",
   },
   about: {
-    title: "About Me",
+    title: "About",
     description:
-      "SEO content specialist focusing on search-optimized content creation to support organic traffic growth and search visibility.",
+      "SEO content specialist focused on organic traffic growth and increased search visibility",
+  },
+  experience: {
+    title: "experience",
+    description: "4+ years",
   },
   work: {
     title: "Work Experience",
@@ -259,22 +263,22 @@ export const resumeData = {
       },
       {
         id: 3,
-        tech: "Surfer SEO",
+        tech: "Surfer",
         icon: "fa-brands fa-sistrix",
       },
       {
         id: 4,
-        tech: "Yoast SEO",
+        tech: "Yoast",
         icon: "fa-brands fa-yoast",
       },
       {
         id: 5,
-        tech: "Google Search Console",
+        tech: "GSC",
         icon: "fa-brands fa-google",
       },
       {
         id: 6,
-        tech: "HTML • CSS • JavaScript",
+        tech: "HTML • CSS • JS",
         icon: "fa-solid fa-code",
       },
     ],
