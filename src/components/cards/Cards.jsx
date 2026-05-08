@@ -18,7 +18,7 @@ function bitdegreeCard() {
           </h3>
           <p className="px-0.5 font-jetbrains-mono">{article.description}</p>
           <hr className="border-dashed" />
-          <button className="self-end border border-solid border-pollar-night-nord3 bg-aurora-nord13 px-2 py-1 rounded-md">
+          <button className="lowercase self-end border border-solid border-pollar-night-nord3 bg-aurora-nord13 px-2 py-1 rounded-md">
             <a
               href={article.url}
               target="_blank"
@@ -48,7 +48,7 @@ function hostingerCard() {
           </h3>
           <p className="px-0.5 font-jetbrains-mono">{article.description}</p>
           <hr className="border-dashed" />
-          <button className="self-end border border-solid border-pollar-night-nord3 bg-aurora-nord13 px-2 py-1 rounded-md">
+          <button className="lowercase self-end border border-solid border-pollar-night-nord3 bg-aurora-nord13 px-2 py-1 rounded-md">
             <a
               href={article.url}
               target="_blank"
@@ -78,7 +78,7 @@ function wordpressCard() {
           </h3>
           <p className="px-0.5 font-jetbrains-mono">{article.description}</p>
           <hr className="border-dashed" />
-          <button className="self-end border border-solid border-pollar-night-nord3 bg-aurora-nord13 px-2 py-1 rounded-md">
+          <button className="lowercase self-end border border-solid border-pollar-night-nord3 bg-aurora-nord13 px-2 py-1 rounded-md">
             <a
               href={article.url}
               target="_blank"
