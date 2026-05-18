@@ -53,14 +53,14 @@ export function Resume() {
           </p>
         </div>
         {/* ===== Work Experience ===== */}
-        <div className="col-span-12 flex flex-col gap-4 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small bg-snow-storm-nord5">
+        <div className="col-span-12 flex flex-col gap-4 p-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
           <h3 className="lowercase text-sm font-cascadia-code">
             {resumeData.work.title}
           </h3>
           {resumeData.work.jobs.map((job) => (
             <div
               key={job.id}
-              className="bg-snow-storm-nord4 p-4 rounded-lg flex flex-col gap-4"
+              className="bg-snow-storm-nord5 p-4 rounded-lg flex flex-col gap-4"
             >
               <div className="flex flex-col gap-4">
                 <p className="bg-aurora-nord12 px-1.5 py-1 rounded-md font-cascadia-code">
@@ -75,7 +75,7 @@ export function Resume() {
                   </p>
                 </div>
               </div>
-              <ul className="font-jetbrains-mono px-6">
+              <ul className="font-jetbrains-mono px-6 text-pollar-night-nord0">
                 {job.description.map((desc, index) => (
                   <li className="list-[square] list-outside" key={index}>
                     {desc}
