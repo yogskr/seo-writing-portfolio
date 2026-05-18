@@ -23,8 +23,8 @@ export function Work() {
           </p>
         </section>
       </div>
-      <div className="grid grid-cols-10 auto-rows-auto gap-y-10 p-4">
-        <div className="col-span-10 flex flex-col items-center gap-4">
+      <div className="grid grid-cols-12 auto-rows-auto gap-y-10 p-4">
+        <div className="col-span-12 flex flex-col items-center gap-4">
           <figure className="flex items-center justify-center w-full gap-3">
             <img
               src={workData.companies.bitdegree.logo}
@@ -37,7 +37,7 @@ export function Work() {
           </figure>
           {bitdegreeCard()}
         </div>
-        <div className="col-span-10 flex flex-col items-center gap-4">
+        <div className="col-span-12 flex flex-col items-center gap-4">
           <figure className="flex items-center w-full gap-3">
             <img
               src={workData.companies.hostinger.logo}
@@ -50,7 +50,7 @@ export function Work() {
           </figure>
           {hostingerCard()}
         </div>
-        <div className="col-span-10 flex flex-col items-center gap-4">
+        <div className="col-span-12 flex flex-col items-center gap-4">
           <figure className="flex items-center w-full gap-3">
             <img
               src={workData.companies.wordpress.logo}
