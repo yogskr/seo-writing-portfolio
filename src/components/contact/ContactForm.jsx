@@ -102,111 +102,121 @@ export function ContactForm({ emailjsConfig }) {
   };
 
   return (
-    <div className="contact-form">
-      <form onSubmit={handleSubmit} className="form">
-        <div className="form-group">
-          <label htmlFor="name" className="form-label">
-            {contactData.formFields.name.label} *
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            className={`form-input ${errors.name ? "error" : ""}`}
-            placeholder="Your full name"
-          />
-          {errors.name && <span className="error-message">{errors.name}</span>}
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="email" className="form-label">
-            {contactData.formFields.email.label} *
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            className={`form-input ${errors.email ? "error" : ""}`}
-            placeholder="your.email@example.com"
-          />
-          {errors.email && (
-            <span className="error-message">{errors.email}</span>
-          )}
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="subject" className="form-label">
-            {contactData.formFields.subject.label} *
-          </label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleInputChange}
-            className={`form-input ${errors.subject ? "error" : ""}`}
-            placeholder="What's this about?"
-          />
-          {errors.subject && (
-            <span className="error-message">{errors.subject}</span>
-          )}
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="message" className="form-label">
-            {contactData.formFields.message.label} *
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            className={`form-textarea ${errors.message ? "error" : ""}`}
-            placeholder="Tell me more about your project or inquiry..."
-            rows="5"
-          />
-          {errors.message && (
-            <span className="error-message">{errors.message}</span>
-          )}
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="company" className="form-label">
-            {contactData.formFields.company.label}
-          </label>
-          <input
-            type="text"
-            id="company"
-            name="company"
-            value={formData.company}
-            onChange={handleInputChange}
-            className="form-input"
-            placeholder="Your company (optional)"
-          />
-        </div>
-
-        <button type="submit" disabled={isSubmitting} className="submit-button">
-          <p className="submit-text">
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </p>
-        </button>
-
-        {submitStatus === "success" && (
-          <div className="success-message">
-            {contactData.sendButton.sucessMessage}
-          </div>
+    <form onSubmit={handleSubmit} className="flex flex-col items-start gap-4">
+      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+        <label
+          htmlFor="name"
+          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+        >
+          {contactData.formFields.name.label}
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
+          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          placeholder={contactData.formFields.name.placeholder}
+        />
+        {errors.name && (
+          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+            {errors.name}
+          </span>
         )}
+      </div>
 
-        {submitStatus === "error" && (
-          <div className="error-message">
-            {contactData.sendButton.errorMessage}
-          </div>
+      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+        <label
+          htmlFor="email"
+          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+        >
+          {contactData.formFields.email.label}
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleInputChange}
+          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          placeholder={contactData.formFields.email.placeholder}
+        />
+        {errors.email && (
+          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+            {errors.email}
+          </span>
         )}
-      </form>
-    </div>
+      </div>
+
+      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+        <label
+          htmlFor="subject"
+          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+        >
+          {contactData.formFields.subject.label}
+        </label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          value={formData.subject}
+          onChange={handleInputChange}
+          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          placeholder={contactData.formFields.subject.placeholder}
+        />
+        {errors.subject && (
+          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+            {errors.subject}
+          </span>
+        )}
+      </div>
+
+      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+        <label
+          htmlFor="message"
+          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+        >
+          {contactData.formFields.message.label}
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleInputChange}
+          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          placeholder={contactData.formFields.message.placeholder}
+          rows="5"
+        />
+        {errors.message && (
+          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+            {errors.message}
+          </span>
+        )}
+      </div>
+
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="lowercase border-2 border-solid border-pollar-night-nord3 px-2 py-1 rounded-md bg-aurora-nord14 font-cascadia-code text-pollar-night-nord0 font-semibold flex items-center gap-2 self-end"
+      >
+        <p className="submit-text">
+          {isSubmitting ? "Sending..." : "Send Message"}
+        </p>
+        <i className={contactData.sendButton.icon}></i>
+      </button>
+
+      {submitStatus === "success" && (
+        <div className="success-message">
+          {contactData.sendButton.sucessMessage}
+        </div>
+      )}
+
+      {submitStatus === "error" && (
+        <div className="error-message">
+          {contactData.sendButton.errorMessage}
+        </div>
+      )}
+    </form>
   );
 }
