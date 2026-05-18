@@ -288,15 +288,15 @@ export const resumeData = {
 // Contact data
 export const contactData = {
   header: {
-    title: "Get in Touch",
-    description:
-      "Let's discuss work opportunity, writing projects, and collaborations.",
+    title: "Work With Me",
+    description: "jobs ▪ projects",
   },
   formFields: {
+    title: "Get In Touch",
     name: {
       label: "Name",
       type: "text",
-      placeholder: "Your full name",
+      placeholder: "How may I refer to you?",
       required: true,
     },
     email: {
@@ -308,7 +308,7 @@ export const contactData = {
     subject: {
       label: "Subject",
       type: "text",
-      placeholder: "What's this about?",
+      placeholder: "What is this about?",
       required: true,
     },
     message: {
@@ -317,14 +317,9 @@ export const contactData = {
       placeholder: "Tell me more about your project or inquiry...",
       required: true,
     },
-    company: {
-      label: "Company/Organization",
-      type: "text",
-      placeholder: "Your company (optional)",
-      required: false,
-    },
   },
   directContact: {
+    title: ["Email", "Social"],
     email: "yogakrisanta@gmail.com",
     socialLinks: [
       {
@@ -349,5 +344,14 @@ export const contactData = {
       "Thank you! Your message has been sent successfully. I'll get back to you soon.",
     errorMessage:
       "Sorry, there was an error sending your message. Please try again or contact me directly.",
+    icon: "fa-solid fa-arrow-right",
+  },
+  availability: {
+    title: "Availability",
+    description: [
+      { id: 1, name: "Full-Time" },
+      { id: 2, name: "Contract" },
+      { id: 4, name: "Freelance" },
+    ],
   },
 };
