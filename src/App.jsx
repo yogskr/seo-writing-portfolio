@@ -88,8 +88,10 @@ function AppContent() {
   const showNavBar = pagesWithNavBar.includes(location.pathname);
 
   return (
-    <div className="bg-snow-storm-nord6">
-      <MainContent />
+    <div className="bg-snow-storm-nord6 min-h-dvh flex flex-col">
+      <div className="flex-1">
+        <MainContent />
+      </div>
       {showNavBar && (
         <NavBar showNavBar={showNavBar} currentPath={location.pathname} />
       )}
