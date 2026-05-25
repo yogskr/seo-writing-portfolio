@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useEffect } from "react"
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
+  useLocation
 } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { NavBar } from "./components/navigation/NavBar";
