@@ -41,9 +41,8 @@ export const homeData = {
   tagline: {
     title: "specialty",
     desc: "Content optimization specialist for organic growth",
+    detail: "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
   },
-  // description:
-  //   "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
   niches: {
     title: "niche",
     list: ["AI", "Web3", "SaaS", "Web Dev"],
