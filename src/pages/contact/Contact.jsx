@@ -38,7 +38,7 @@ export function Contact() {
       </div>
       <div className="grid grid-cols-12 auto-rows-auto gap-y-4 gap-x-3 p-4">
         <ContactInfo contactData={contactData} />
-        <div className="col-span-12 border-2 border-solid border-pollar-night-nord3 p-4 rounded-lg flex flex-col gap-4 shadow-small bg-snow-storm-nord5">
+        <div className="col-span-12 border-2 border-solid border-pollar-night-nord3 p-4 rounded-lg flex flex-col gap-4 shadow-small">
           <h3 className="text-sm lowercase font-cascadia-code text-pollar-night-nord0">
             {contactData.formFields.title}
           </h3>
