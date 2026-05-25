@@ -28,14 +28,14 @@ export function NavBar({ showNavBar, currentPath }) {
         className={
           showNavBar
             ? "flex items-center justify-evenly"
-            : "flex items-center justify-between h-full w-full"
+            : "flex items-center justify-between md:justify-evenly h-full w-full"
         }
       >
         {filteredLinks.map((link, index) => (
           <li key={link.id}>
             <Link
               id={link.id}
-              className={`${showNavBar ? `flex flex-col items-center p-3 w-12 ${path === link.url ? "border-b-2 border-snow-storm-nord5" : ""}` : `${bgColors[index % bgColors.length]} flex flex-col items-center p-1.5 w-20 border-2 border-solid border-pollar-night-nord3 rounded-md`}`}
+              className={`${showNavBar ? `flex flex-col items-center p-3 w-12 ${path === link.url ? "border-b-2 border-snow-storm-nord5" : ""}` : `${bgColors[index % bgColors.length]} flex flex-col md:flex-row items-center md:justify-evenly p-1.5 md:p-2 w-20 md:w-28 border-2 border-solid border-pollar-night-nord3 rounded-md`}`}
               to={link.url}
             >
               <i className={`text-xl ${link.icon}`}></i>
