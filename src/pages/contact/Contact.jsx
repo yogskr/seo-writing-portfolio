@@ -24,7 +24,7 @@ export function Contact() {
 
   return (
     <>
-      <div className="bg-snow-storm-nord6 p-4">
+      <div className="bg-snow-storm-nord6 p-4 md:p-8 md:pb-4">
         <section
           className={`${stickyHeader ? "fixed left-0 right-0 rounded-none shadow-none" : "sticky shadow-small"} top-0 flex flex-wrap items-center justify-between gap-4 bg-pollar-night-nord0 text-snow-storm-nord5 p-4 rounded-lg z-50`}
         >
@@ -36,7 +36,7 @@ export function Contact() {
           </p>
         </section>
       </div>
-      <div className="grid grid-cols-12 auto-rows-auto gap-y-4 gap-x-3 p-4">
+      <div className="grid grid-cols-12 auto-rows-auto gap-y-4 gap-x-3 p-4 md:p-8 md:pt-4">
         <ContactInfo contactData={contactData} />
         <div className="col-span-12 border-2 border-solid border-pollar-night-nord3 p-4 rounded-lg flex flex-col gap-4 shadow-small">
           <h3 className="text-sm lowercase font-cascadia-code text-pollar-night-nord0">
