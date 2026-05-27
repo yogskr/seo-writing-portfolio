@@ -35,12 +35,12 @@ export function NavBar({ showNavBar, currentPath }) {
           <li key={link.id}>
             <Link
               id={link.id}
-              className={`${showNavBar ? `flex flex-col items-center p-3 w-12 ${path === link.url ? "border-b-2 border-snow-storm-nord5" : ""}` : `${bgColors[index % bgColors.length]} flex flex-col md:flex-row items-center md:justify-evenly p-1.5 md:p-2 w-20 md:w-28 border-2 border-solid border-pollar-night-nord3 rounded-md`}`}
+              className={`${showNavBar ? `flex flex-col items-center p-3 w-12 ${path === link.url ? "border-b-2 border-snow-storm-nord5" : ""}` : `${bgColors[index % bgColors.length]} flex flex-col md:flex-row items-center md:justify-center md:gap-3 p-1.5 md:p-2 w-20 md:w-36 border-2 border-solid border-pollar-night-nord3 rounded-md`}`}
               to={link.url}
             >
-              <i className={`text-xl ${link.icon}`}></i>
+              <i className={`text-xl md:text-2xl ${link.icon}`}></i>
               <p
-                className={`${showNavBar ? "hidden" : "text-sm font-cascadia-code text-pollar-night-nord1 lowercase font-semibold"}`}
+                className={`${showNavBar ? "hidden" : "text-sm md:text-lg font-cascadia-code text-pollar-night-nord1 lowercase font-semibold"}`}
               >
                 {link.name}
               </p>
