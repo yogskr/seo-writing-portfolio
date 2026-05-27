@@ -6,7 +6,7 @@ export function Resume() {
 
   return (
     <>
-      <div className="bg-snow-storm-nord6 p-4">
+      <div className="bg-snow-storm-nord6 p-4 md:p-8 md:pb-4">
         <section
           className={`${stickyHeader ? "fixed left-0 right-0 rounded-none shadow-none" : "sticky shadow-small"} top-0 flex flex-wrap items-center justify-between gap-4 bg-pollar-night-nord0 text-snow-storm-nord5 p-4 rounded-lg z-50`}
         >
@@ -18,7 +18,7 @@ export function Resume() {
           </p>
         </section>
       </div>
-      <div className="grid grid-cols-12 auto-rows-auto gap-4 p-4">
+      <div className="grid grid-cols-12 auto-rows-auto gap-4 p-4 md:p-8 md:pt-4">
         {/* ===== About Me ===== */}
         <div className="col-span-12 flex flex-col gap-4 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small p-4 bg-aurora-nord14 h-fit">
           <h3 className="text-sm font-cascadia-code lowercase text-pollar-night-nord1">
