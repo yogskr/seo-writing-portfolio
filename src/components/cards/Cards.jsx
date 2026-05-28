@@ -11,12 +11,12 @@ function bitdegreeCard() {
       {bitdegreeArticles.map((article) => (
         <div
           key={article.id}
-          className="flex flex-col gap-3 md:gap-5 border-2 border-solid border-pollar-night-nord3 p-4 md:px-8 md:py-6 rounded-lg shadow-small bg-snow-storm-nord5"
+          className="flex flex-col gap-3 md:gap-5 border-2 border-solid border-pollar-night-nord3 p-4 md:px-8 md:py-6 rounded-lg shadow-small bg-snow-storm-nord5 w-full"
         >
           <h3 className="bg-aurora-nord14 rounded-lg px-2 py-1 md:px-3 md:py-2 font-semibold font-cascadia-code text-pollar-night-nord0 md:text-xl">
             {article.title}
           </h3>
-          <p className="px-0.5 font-jetbrains-mono md:text-lg">
+          <p className="px-0.5 font-jetbrains-mono md:text-lg md:leading-relaxed">
             {article.description}
           </p>
           <hr className="border-dashed" />
@@ -48,7 +48,7 @@ function hostingerCard() {
           <h3 className="bg-aurora-nord14 rounded-lg px-2 py-1 md:px-3 md:py-2 font-semibold font-cascadia-code text-pollar-night-nord0 md:text-xl">
             {article.title}
           </h3>
-          <p className="px-0.5 font-jetbrains-mono md:text-lg">
+          <p className="px-0.5 font-jetbrains-mono md:text-lg md:leading-relaxed">
             {article.description}
           </p>
           <hr className="border-dashed" />
@@ -80,7 +80,7 @@ function wordpressCard() {
           <h3 className="bg-aurora-nord14 rounded-lg px-2 py-1 md:px-3 md:py-2 font-semibold font-cascadia-code text-pollar-night-nord0 md:text-xl">
             {article.title}
           </h3>
-          <p className="px-0.5 font-jetbrains-mono md:text-lg">
+          <p className="px-0.5 font-jetbrains-mono md:text-lg md:leading-relaxed">
             {article.description}
           </p>
           <hr className="border-dashed" />

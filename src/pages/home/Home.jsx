@@ -11,7 +11,7 @@ export function Home() {
           <img
             src={heroData.image}
             alt={heroData.title}
-            className="w-28 md:w-52 h-fit rounded-lg border-2 border-solid border-pollar-night-nord1"
+            className="w-28 md:w-48 h-fit rounded-lg border-2 border-solid border-pollar-night-nord1"
           />
         </figure>
         <div className="flex flex-col gap-2 md:gap-6">
@@ -43,20 +43,20 @@ export function Home() {
       </header>
 
       {/* Tagline section */}
-      <div className="col-span-10 md:col-span-5 row-span-2 md:row-span-6 flex flex-col gap-3 md:justify-between bg-aurora-nord14 p-4 md:px-8 md:py-10 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
+      <div className="col-span-10 md:col-span-5 row-span-2 md:row-span-6 flex flex-col gap-3 md:justify-between bg-aurora-nord14 p-4 md:p-8 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
         <h2 className="text-sm md:text-base text-pollar-night-nord1 font-cascadia-code">
           {homeData.tagline.title}
         </h2>
-        <p className="text-lg md:text-2xl font-bold tracking-tight text-pollar-night-nord0 font-jetbrains-mono">
+        <p className="text-lg md:text-xl font-bold tracking-tight text-pollar-night-nord0 font-jetbrains-mono">
           {homeData.tagline.desc}
         </p>
-        <p className="hidden md:block font-jetbrains-mono tracking-wide leading-relaxed text-lg">
+        <p className="hidden md:block font-jetbrains-mono tracking-wide text-lg">
           {homeData.tagline.detail}
         </p>
       </div>
 
       {/* Niches section */}
-      <div className="col-span-6 md:col-span-5 row-span-3 md:row-span-2 flex flex-col gap-4 md:justify-between bg-frost-nord8 p-4 md:px-8 md:py-10 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
+      <div className="col-span-6 md:col-span-5 row-span-3 md:row-span-2 flex flex-col gap-4 md:justify-between bg-frost-nord8 p-4 md:p-8 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
         <h2 className="text-sm md:text-base text-pollar-night-nord0 font-cascadia-code bg-auro">
           {homeData.niches.title}
         </h2>
@@ -73,11 +73,11 @@ export function Home() {
       </div>
 
       {/* Experience section */}
-      <div className="col-span-4 md:col-span-5 row-span-3 md:row-span-2 flex flex-col gap-8 md:justify-between bg-aurora-nord13 p-4 md:px-8 md:py-10 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
+      <div className="col-span-4 md:col-span-5 row-span-3 md:row-span-2 flex flex-col gap-8 md:justify-between bg-aurora-nord13 p-4 md:p-8 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
         <h2 className="text-sm md:text-base text-pollar-night-nord1 font-cascadia-code">
           {homeData.experience.title}
         </h2>
-        <p className="font-bold text-pollar-night-nord0 text-3xl md:text-5xl tracking-wide font-jetbrains-mono">
+        <p className="font-bold text-pollar-night-nord0 text-3xl md:text-4xl tracking-wide font-jetbrains-mono">
           {homeData.experience.desc}
         </p>
       </div>

@@ -18,7 +18,7 @@ export function Work() {
           <h2 className="text-lg md:text-2xl font-bold font-cascadia-code">
             {workData.header.title}
           </h2>
-          <p className="text-sm md:text-base text-frost-nord7 tracking-tight font-jetbrains-mono">
+          <p className="text-sm md:text-base text-frost-nord7 tracking-tight md:tracking-normal font-jetbrains-mono">
             {workData.header.description}
           </p>
         </section>
