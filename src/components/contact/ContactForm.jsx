@@ -102,11 +102,15 @@ export function ContactForm({ emailjsConfig }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-start gap-4">
-      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col items-start gap-4 md:gap-6"
+    >
+      {/* Name Section */}
+      <div className="flex flex-col gap-4 md:gap-6 w-full border-2 border-solid border-pollar-night-nord3 p-2 md:p-4 rounded-lg">
         <label
           htmlFor="name"
-          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+          className="bg-aurora-nord13 px-2 py-1 md:px-4 md:py-2 font-semibold font-jetbrains-mono rounded-md md:text-lg"
         >
           {contactData.formFields.name.label}
         </label>
@@ -116,20 +120,21 @@ export function ContactForm({ emailjsConfig }) {
           name="name"
           value={formData.name}
           onChange={handleInputChange}
-          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          className={`text-sm md:text-base font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 md:p-4 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
           placeholder={contactData.formFields.name.placeholder}
         />
         {errors.name && (
-          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+          <span className="p-1 md:p-2 text-sm md:text-base text-aurora-nord11 font-cascadia-code">
             {errors.name}
           </span>
         )}
       </div>
 
-      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+      {/* Email Section */}
+      <div className="flex flex-col gap-4 md:gap-6 w-full border-2 border-solid border-pollar-night-nord3 p-2 md:p-4 rounded-lg">
         <label
           htmlFor="email"
-          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+          className="bg-aurora-nord13 px-2 py-1 md:px-4 md:py-2 font-semibold font-jetbrains-mono rounded-md md:text-lg"
         >
           {contactData.formFields.email.label}
         </label>
@@ -139,20 +144,21 @@ export function ContactForm({ emailjsConfig }) {
           name="email"
           value={formData.email}
           onChange={handleInputChange}
-          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          className={`text-sm md:text-base font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 md:p-4 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
           placeholder={contactData.formFields.email.placeholder}
         />
         {errors.email && (
-          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+          <span className="p-1 md:p-2 text-sm md:text-base text-aurora-nord11 font-cascadia-code">
             {errors.email}
           </span>
         )}
       </div>
 
-      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+      {/* Subject Section */}
+      <div className="flex flex-col gap-4 md:gap-6 w-full border-2 border-solid border-pollar-night-nord3 p-2 md:p-4 rounded-lg">
         <label
           htmlFor="subject"
-          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+          className="bg-aurora-nord13 px-2 py-1 md:px-4 md:py-2 font-semibold font-jetbrains-mono rounded-md md:text-lg"
         >
           {contactData.formFields.subject.label}
         </label>
@@ -162,20 +168,21 @@ export function ContactForm({ emailjsConfig }) {
           name="subject"
           value={formData.subject}
           onChange={handleInputChange}
-          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          className={`text-sm md:text-base font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 md:p-4 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
           placeholder={contactData.formFields.subject.placeholder}
         />
         {errors.subject && (
-          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+          <span className="p-1 md:p-2 text-sm md:text-base text-aurora-nord11 font-cascadia-code">
             {errors.subject}
           </span>
         )}
       </div>
 
-      <div className="flex flex-col gap-4 w-full border-2 border-solid border-pollar-night-nord3 p-2 rounded-lg">
+      {/* Message Section */}
+      <div className="flex flex-col gap-4 md:gap-6 w-full border-2 border-solid border-pollar-night-nord3 p-2 md:p-4 rounded-lg">
         <label
           htmlFor="message"
-          className="bg-aurora-nord13 px-2 py-1 font-semibold font-jetbrains-mono rounded-md"
+          className="bg-aurora-nord13 px-2 py-1 md:px-4 md:py-2 font-semibold font-jetbrains-mono rounded-md md:text-lg"
         >
           {contactData.formFields.message.label}
         </label>
@@ -184,12 +191,12 @@ export function ContactForm({ emailjsConfig }) {
           name="message"
           value={formData.message}
           onChange={handleInputChange}
-          className={`text-sm font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
+          className={`text-sm md:text-base font-jetbrains-mono focus:outline-none focus:bg-frost-nord8/35 rounded-md p-2 md:p-4 ${errors.name ? "bg-aurora-nord11/20" : "bg-snow-storm-nord4/50"}`}
           placeholder={contactData.formFields.message.placeholder}
           rows="5"
         />
         {errors.message && (
-          <span className="p-1 text-sm text-aurora-nord11 font-cascadia-code">
+          <span className="p-1 md:p-2 text-sm md:text-base text-aurora-nord11 font-cascadia-code">
             {errors.message}
           </span>
         )}
@@ -198,7 +205,7 @@ export function ContactForm({ emailjsConfig }) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="lowercase border-2 border-solid border-pollar-night-nord3 px-2 py-1 rounded-md bg-aurora-nord14 font-cascadia-code text-pollar-night-nord0 font-semibold flex items-center gap-2 self-end"
+        className="lowercase border-2 border-solid border-pollar-night-nord3 px-2 py-1 md:px-4 md:py-2 rounded-md bg-aurora-nord14 font-cascadia-code text-pollar-night-nord0 font-semibold flex items-center gap-2 md:gap-3 self-end md:text-lg"
       >
         <p className="submit-text">
           {isSubmitting ? "Sending..." : "Send Message"}
