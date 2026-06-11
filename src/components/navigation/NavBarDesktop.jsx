@@ -1,0 +1,26 @@
+import { navData } from "../../data";
+import { Link, useLocation } from "react-router-dom";
+
+export function NavBarDesktop({ currentPath }) {
+  const location = useLocation();
+  const path = currentPath || location.pathname;
+
+  return (
+    <nav className="hidden lg:flex justify-between items-center px-8 py-4 col-span-10 bg-pollar-night-nord0 text-snow-storm-nord5 rounded-lg shadow-small text-xl font-jetbrains-mono">
+      <div className="flex space-x-4">
+        {navData.links.map((link) => (
+          <Link
+            key={link.id}
+            to={link.url}
+            className={path === link.url ? "active" : ""}
+          >
+            {link.name}
+          </Link>
+        ))}
+      </div>
+      <p className="text-lg font-cascadia-code text-frost-nord7">
+        {navData.navTitle}
+      </p>
+    </nav>
+  );
+}
