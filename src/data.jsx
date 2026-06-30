@@ -34,6 +34,8 @@ export const navData = {
       icon: "fa-solid fa-paper-plane nav-icon",
     },
   ],
+
+  navTitle: "seo writing portfolio",
 };
 
 // Home page data
@@ -41,7 +43,8 @@ export const homeData = {
   tagline: {
     title: "specialty",
     desc: "Content optimization specialist for organic growth",
-    detail: "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
+    detail:
+      "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
   },
   niches: {
     title: "niche",
