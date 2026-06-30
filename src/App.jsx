@@ -1,9 +1,9 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation
+  useLocation,
 } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { NavBar } from "./components/navigation/NavBar";
@@ -88,7 +88,7 @@ function AppContent() {
   const showNavBar = pagesWithNavBar.includes(location.pathname);
 
   return (
-    <div className="bg-snow-storm-nord6 min-h-dvh flex flex-col">
+    <div className="bg-snow-storm-nord6 min-h-dvh">
       <div className="flex-1">
         <MainContent />
       </div>
