@@ -11,6 +11,8 @@ import { Home } from "./pages/home/Home";
 import { Work } from "./pages/work/Work";
 import { Contact } from "./pages/contact/Contact";
 import { Resume } from "./pages/resume/Resume";
+import { NavBarDesktop } from "./components/navigation/NavBarDesktop";
+import { FooterDesktop } from "./components/footer/FooterDesktop";
 
 // Pages that should show the navigation bar
 const pagesWithNavBar = ["/work", "/resume", "/contact"];
@@ -47,7 +49,7 @@ const pageTransition = {
 
 const MotionDiv = motion.div;
 
-function MainContent() {
+function MainContent({ className }) {
   const location = useLocation();
 
   useEffect(() => {
@@ -58,28 +60,30 @@ function MainContent() {
   }, [location.pathname]);
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        {routes.map((route) => (
-          <Route
-            key={route.path}
-            path={route.path}
-            element={
-              <MotionDiv
-                key={location.pathname}
-                initial="initial"
-                animate="in"
-                exit="out"
-                variants={pageVariants}
-                transition={pageTransition}
-              >
-                {route.element}
-              </MotionDiv>
-            }
-          />
-        ))}
-      </Routes>
-    </AnimatePresence>
+    <div className={className}>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={
+                <MotionDiv
+                  key={location.pathname}
+                  initial="initial"
+                  animate="in"
+                  exit="out"
+                  variants={pageVariants}
+                  transition={pageTransition}
+                >
+                  {route.element}
+                </MotionDiv>
+              }
+            />
+          ))}
+        </Routes>
+      </AnimatePresence>
+    </div>
   );
 }
 
@@ -89,12 +93,12 @@ function AppContent() {
 
   return (
     <div className="bg-snow-storm-nord6 min-h-dvh">
-      <div className="flex-1">
-        <MainContent />
-      </div>
+      <NavBarDesktop />
+      <MainContent className="flex-1" />
       {showNavBar && (
         <NavBar showNavBar={showNavBar} currentPath={location.pathname} />
       )}
+      <FooterDesktop />
     </div>
   );
 }
