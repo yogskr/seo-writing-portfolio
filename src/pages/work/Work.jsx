@@ -10,7 +10,7 @@ export function Work() {
   const stickyHeader = useIsScrolled();
 
   return (
-    <>
+    <div className="lg:px-26 lg:py-16">
       <div className="bg-snow-storm-nord6 p-4 md:p-8 md:pb-4">
         <section
           className={`${stickyHeader ? "fixed left-0 right-0 rounded-none shadow-none" : "sticky shadow-small"} top-0 flex flex-wrap items-center justify-between gap-4 bg-pollar-night-nord0 text-snow-storm-nord5 p-4 md:px-8 rounded-lg z-50`}
@@ -70,6 +70,6 @@ export function Work() {
           {wordpressCard()}
         </div>
       </div>
-    </>
+    </div>
   );
 }
