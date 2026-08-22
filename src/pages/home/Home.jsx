@@ -1,15 +1,12 @@
 import { heroData, homeData } from "../../data";
 import { NavBar } from "../../components/navigation/NavBar";
 import RotatingText from "../../components/rotating-text/RotatingText";
-import { NavBarDesktop } from "../../components/navigation/NavBarDesktop";
 
 export function Home() {
   return (
-    <div className="grid grid-cols-10 auto-rows-auto min-h-svh gap-4 md:gap-6 p-4 md:p-8 lg:px-26 lg:py-16">
-      <NavBarDesktop />
-
+    <div className="grid grid-cols-10 auto-rows-auto min-h-svh lg:min-h-0 lg:h-192 gap-4 md:gap-6 p-4 md:p-8 lg:py-12 lg:px-20">
       {/* Hero Section */}
-      <header className="col-span-10 md:col-span-5 row-span-5 md:row-span-10 lg:row-span-8 flex flex-col justify-between lg:justify-evenly p-4 md:p-8 lg:p-10 bg-pollar-night-nord0 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
+      <header className="col-span-10 row-span-5 md:col-span-5 md:row-span-10 lg:row-span-8 flex flex-col justify-between lg:justify-evenly p-4 md:p-8 lg:p-10 bg-pollar-night-nord0 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small">
         <figure className="w-full h-fit rounded-lg col-start-2 flex justify-end">
           <img
             src={heroData.image}
