@@ -10,10 +10,10 @@ export function Work() {
   const stickyHeader = useIsScrolled();
 
   return (
-    <div className="lg:px-26 lg:py-16">
+    <div className="lg:px-72 lg:py-16 lg:col-span-10 lg:row-span-10">
       <div className="bg-snow-storm-nord6 p-4 md:p-8 md:pb-4">
         <section
-          className={`${stickyHeader ? "fixed left-0 right-0 rounded-none shadow-none" : "sticky shadow-small"} top-0 flex flex-wrap items-center justify-between gap-4 bg-pollar-night-nord0 text-snow-storm-nord5 p-4 md:px-8 rounded-lg z-50`}
+          className={`${stickyHeader ? "fixed lg:relative left-0 right-0 rounded-none shadow-none" : "sticky shadow-small"} top-0 flex flex-wrap items-center justify-between gap-4 bg-pollar-night-nord0 text-snow-storm-nord5 p-4 md:px-8 rounded-lg z-50 lg:z-10`}
         >
           <h2 className="text-lg md:text-2xl font-bold font-cascadia-code">
             {workData.header.title}

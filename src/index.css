@@ -6,6 +6,17 @@
 
 @import "tailwindcss";
 
+@media (min-width: 1024px) {
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @theme {
   /* font family */
   --font-jetbrains-mono: "JetBrains Mono", serif;

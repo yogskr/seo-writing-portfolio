@@ -12,10 +12,10 @@ import { Work } from "./pages/work/Work";
 import { Contact } from "./pages/contact/Contact";
 import { Resume } from "./pages/resume/Resume";
 import { NavBarDesktop } from "./components/navigation/NavBarDesktop";
-import { FooterDesktop } from "./components/footer/FooterDesktop";
 
 // Pages that should show the navigation bar
 const pagesWithNavBar = ["/work", "/resume", "/contact"];
+const desktopFixedNavPaths = ["/work", "/resume", "/contact"];
 
 // Route configuration
 const routes = [
@@ -75,6 +75,7 @@ function MainContent({ className }) {
                   exit="out"
                   variants={pageVariants}
                   transition={pageTransition}
+                  className="grid lg:h-svh lg:grid-cols-10 lg:grid-rows-10"
                 >
                   {route.element}
                 </MotionDiv>
@@ -90,15 +91,15 @@ function MainContent({ className }) {
 function AppContent() {
   const location = useLocation();
   const showNavBar = pagesWithNavBar.includes(location.pathname);
+  const isDesktopNavFixed = desktopFixedNavPaths.includes(location.pathname);
 
   return (
-    <div className="bg-snow-storm-nord6 min-h-dvh">
-      <NavBarDesktop />
-      <MainContent className="flex-1" />
+    <div className={`bg-snow-storm-nord6 min-h-svh ${isDesktopNavFixed ? "lg:pt-20" : ""}`}>
+      <NavBarDesktop fixed={isDesktopNavFixed} />
+      <MainContent />
       {showNavBar && (
         <NavBar showNavBar={showNavBar} currentPath={location.pathname} />
       )}
-      <FooterDesktop />
     </div>
   );
 }
