@@ -1,12 +1,11 @@
 export function FooterDesktop() {
   return (
     <>
-      <footer className="hidden lg:flex items-center p-8 col-span-12 row-span-2 bg-snow-storm-nord4 rounded-lg shadow-small border-2 border-solid border-pollar-night-nord3">
+      <footer className="hidden m-0 lg:flex items-center lg:p-8 lg:col-span-12 lg:row-span-2 bg-snow-storm-nord4 lg:rounded-lg lg:shadow-small lg:border-2 lg:border-solid lg:border-pollar-night-nord3">
         <p className="font-semibold">
           © {new Date().getFullYear()} made with passion
         </p>
       </footer>
-      <section></section>
     </>
   );
 }
