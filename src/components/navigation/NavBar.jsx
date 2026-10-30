@@ -21,7 +21,7 @@ export function NavBar({ showNavBar, currentPath }) {
       className={
         showNavBar
           ? "bg-pollar-night-nord0 col-span-10 text-snow-storm-nord5 sticky bottom-0 z-50 p-2 lg:hidden"
-          : "text-pollar-night-nord0 col-span-10 row-span-2 p-4 bg-snow-storm-nord5 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small lg:hidden"
+          : "text-pollar-night-nord0 col-span-10 row-span-1 p-4 bg-snow-storm-nord5 border-2 border-solid border-pollar-night-nord3 rounded-lg shadow-small lg:hidden"
       }
     >
       <ul
