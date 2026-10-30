@@ -7,10 +7,10 @@ export default function RotatingText() {
 
   useEffect(() => {
     const phrases = [
+      "SEO Specialist",
       "Content Writer",
       "News Writer",
       "Content Editor",
-      "Web Developer",
     ];
     const currentPhrase = phrases[wordIndex];
     let typingSpeed = isDeleting ? 50 : 100;
