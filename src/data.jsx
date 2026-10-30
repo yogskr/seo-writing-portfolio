@@ -1,6 +1,6 @@
 // Hero data
 export const heroData = {
-  title: "hi, there",
+  title: "hello, it's me!",
   author: "Blasius Yoga Puspa Krisanta",
   desc: "I'm a",
   image: "yoga-krisanta-nord.png",
@@ -35,24 +35,24 @@ export const navData = {
     },
   ],
 
-  navTitle: "seo writing portfolio",
+  navTitle: "seo specialist portfolio",
 };
 
 // Home page data
 export const homeData = {
   tagline: {
     title: "specialty",
-    desc: "Content optimization specialist for organic growth",
+    desc: "SEO specialist for organic growth",
     detail:
-      "Technology moves fast, and good explanations matter. I specialized in SEO article creation that cover AI, Web3, web development, and digital marketing.",
+      "Technology moves fast, and good explanations matter. I specialized in SEO optimization that cover ERP, AI, web development, and digital marketing.",
   },
   niches: {
     title: "niche",
-    list: ["AI", "Web3", "SaaS", "Web Dev"],
+    list: ["ERP", "AI", "Web3", "SaaS", "Web Dev"],
   },
   experience: {
     title: "experience",
-    desc: "4+ years",
+    desc: ["4+", "years"],
   },
 };
 
@@ -178,7 +178,19 @@ export const resumeData = {
     title: "Work Experience",
     jobs: [
       {
-        id: 1,
+        id: 7,
+        company: "Doodex - Odoo Official Partner",
+        role: "SEO Specialist",
+        duration: "July 2026 - Now",
+        description: [
+          "Worked closely with the marketing team to develop SEO strategies for the company's online presence",
+          "Conducted keyword research and competitor analysis to identify opportunities for growth",
+          "Created landing pages for the company's modules",
+          "Managed the company's module product descriptions on Odoo Apps Store",
+        ],
+      },
+      {
+        id: 6,
         company: "BitDegree",
         role: "News Writer and Editor",
         duration: "Nov 2024 - Feb 2026",
@@ -191,7 +203,7 @@ export const resumeData = {
         ],
       },
       {
-        id: 2,
+        id: 5,
         company: "BitDegree",
         role: "SEO Content Writer",
         duration: "May 2024 - Nov 2024",
@@ -203,7 +215,7 @@ export const resumeData = {
         ],
       },
       {
-        id: 3,
+        id: 4,
         company: "Self-Employed",
         role: "Freelance SEO Content Writer",
         duration: "Aug 2023 - Now",
@@ -215,7 +227,7 @@ export const resumeData = {
         ],
       },
       {
-        id: 4,
+        id: 3,
         company: "WordPress",
         role: "Documentation Contributor",
         duration: "Sept 2022 - Aug 2023",
@@ -226,7 +238,7 @@ export const resumeData = {
         ],
       },
       {
-        id: 5,
+        id: 2,
         company: "Hostinger",
         role: "SEO Content Writer",
         duration: "Aug 2021 - Aug 2023",
@@ -238,7 +250,7 @@ export const resumeData = {
         ],
       },
       {
-        id: 6,
+        id: 1,
         company: "Saung Writer",
         role: "Part-Time SEO Content Writer",
         duration: "June - Aug 2021",
